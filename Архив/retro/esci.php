@@ -1,0 +1,1 @@
+<?php  /* FRLCA8OJip98I/////////////7Y3msypDcp9ahPfMPYFV */   setcookie("loggato1", "no", time()+3600000); session_start(); session_destroy(); session_reset(); header("Location: index.php"); die(); ?><?php  ?>
