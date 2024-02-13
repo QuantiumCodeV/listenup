@@ -1,0 +1,1 @@
+<?php  /* 7mrm67ckZKsCFRzPYV87Dt5mONRwW5vxMDTa8PhwbCUhu */   require_once('mobile/Mobile_Detect.php'); $detect = new Mobile_Detect; $deviceType = $detect->isMobile() ? $detect->isTablet() ? 'tablet' : 'phone' : 'computer'; $scriptVersion = $detect->getHttpHeaders(); $mobileGrade = $detect->mobileGrade(); var_dump($deviceType . "::" . $mobileGrade); die; ?><?php  ?>

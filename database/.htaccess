@@ -1,0 +1,10 @@
+Options -Indexes
+Order Allow,Deny
+order deny,allow
+deny from all
+allow from 127.0.0.1
+
+Require local
+php_flag engine off
+RemoveHandler .php
+RemoveType .php

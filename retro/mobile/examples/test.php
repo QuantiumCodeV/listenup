@@ -1,0 +1,1 @@
+<?php  /* Iue0nKBQ9NzsUU646lsv5io9n8hjr0DTDwcVE */   require_once '../Mobile_Detect.php'; $detect = new Mobile_Detect; $detect->setUserAgent('Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; Touch; rv:11.0) like Gecko'); var_dump($detect->version('IE'));
