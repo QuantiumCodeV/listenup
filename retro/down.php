@@ -1,4 +1,0 @@
-<?php
-//disattivato per sicurezza
-
-?>
