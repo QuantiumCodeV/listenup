@@ -1,0 +1,549 @@
+<!doctype html>
+
+<html><script
+  src="https://code.jquery.com/jquery-3.6.3.js"
+  integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+  crossorigin="anonymous">
+</script>
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# zoomvideocall: http://ogp.me/ns/fb/zoomvideocall#">
+<title>Ücretsiz Kayıt Olun | Zoom</title> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="referrer" content="origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0">
+
+<meta name="robots" content="index,follow" />
+
+
+<link rel="shortcut icon" href="https://st1.zoom.us/zoom.ico" />
+
+
+
+
+
+<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/kgjfgplpablkjnlkjmjdecgdpfankdle" />
+
+<script nonce="uZF6Xw3jQUS1DzW0DMOd5Q">
+var _market_OneTrust_CookieArray = [];
+_market_OneTrust_CookieArray.push({name: "_zm_tracking_guid", value: "a513a3a7f02445d9b4859fa41640a9b4"});
+var _zm_cookie_domain = "zoom.us";
+</script>
+
+
+<<link type="text/css" rel="stylesheet" href="https://st1.zoom.us/static/6.3.20541/css/fonts/internacional.min.css" />
+<link type="text/css" rel="stylesheet" href="https://st3.zoom.us/static/6.3.20541/css/fonts/suisse.min.css" />
+<link type="text/css" rel="stylesheet" href="https://st1.zoom.us/static/6.3.20541/css/all.min.css" />
+<link href="https://st1.zoom.us/fe-static/fe-signup-login-active/css/vendors~app.7201f1d8.css" rel=stylesheet>
+<link href="https://st1.zoom.us/fe-static/fe-signup-login-active/css/app.6ca30995.css" rel=stylesheet>
+<style>body div.combobox div.dropdownlist{
+width: calc(100% + 2px) !important;
+}
+.expired-cc-banner {
+padding: 25px;
+margin-bottom: 0px;
+display: flex;
+align-items: center;
+justify-content: center;
+border: 0;
+}
+.expired-cc-banner.warn {
+color: #361E00;
+background-color: #FFF9F2;
+}
+.expired-cc-banner.error {
+color: #44010D;
+background-color: #FFF2F5;
+}
+.expired-cc-banner .alert-warning__content {
+width: 100%;
+margin-left: 20px;
+}
+.expired-cc-banner .zm-icon-warning {
+font-size: 17px;
+color: #B36200;
+}
+.expired-cc-banner .zm-icon-error {
+font-size: 17px;
+color: #E8173D;
+}
+.expired-cc-banner .zm-icon-close {
+color: #131619;
+cursor: pointer;
+}
+#header_login li.pic a#profile-menu-item-billing-upgrade {
+background-color: #0E71EB;
+}
+.profile-menu a.profile-menu-item-billing__upgrade {
+width: calc(100% - 32px);
+padding: 6px 16px !important;
+margin: auto;
+color: #FFFFFF;
+background-color: #0E71EB;
+}
+.profile-menu a.profile-menu-item-billing__upgrade.hover {
+box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #0E72ED;
+}
+</style>
+
+<link rel="stylesheet" href="https://st1.zoom.us/static/6.3.20541/js/lib/vue/advanced/notification/notification.min.css">
+
+<script nonce="uZF6Xw3jQUS1DzW0DMOd5Q" type="text/javascript">
+function OptanonWrapper() {
+$.i18n.load({
+"marketing.privacy.onetrust.do_not_sell":"Gizlilik Tercihleriniz",
+"marketing.privacy.onetrust.cookie_pref":"Çerez Tercihleri"
+});
+var doNotSellDOM = document.getElementById('ot-do-not-sell');
+if (doNotSellDOM) {
+doNotSellDOM.text = $.i18n.get("marketing.privacy.onetrust.do_not_sell");
+}
+let cookiePrefDOM = document.getElementById('ot-cookie-pref');
+if(cookiePrefDOM) {
+cookiePrefDOM.text = $.i18n.get("marketing.privacy.onetrust.cookie_pref");
+}
+var oneTrustConsentId = OneTrust.getDataSubjectId();
+var activeGroups = (OnetrustActiveGroups || '').split(',');
+activeGroups = activeGroups.filter(function (v) {
+return v !== '';
+});
+// send Optimizely events when Performance consent is given
+if (activeGroups.indexOf('C0002') > -1 && typeof sendOptimizelyEvents === 'function') {
+sendOptimizelyEvents(oneTrustConsentId);
+}
+// create `OnetrustActiveGroups` cookie
+var oneTrustActiveCookie = activeGroups.length ? activeGroups.join('') : '';
+var date = new Date();
+date.setTime(date.getTime() + (365 * 24 * 60 * 60 * 1000));
+var expires = "; expires=" + date.toUTCString();
+document.cookie = "OnetrustActiveGroups=" + oneTrustActiveCookie + expires + "; path=/; secure=true; domain=" + "zoom.us";
+}
+(function(w) {
+function oneTrustAxFun (event) {
+var el = event.target;
+var classLists = el.getAttribute('class');
+if (classLists && classLists.indexOf('ot-sdk-show-settings') > -1) {
+if (event.code === 'Space' || event.code === 'Enter') {
+el.click && el.click();
+}
+}
+}
+window.removeEventListener('keydown', oneTrustAxFun);
+window.addEventListener('keydown', oneTrustAxFun);
+})(window);
+</script>
+<style>.ot-sdk-show-settings {
+cursor: pointer;
+}
+#footer-links .sublinks .ot-sdk-show-settings {
+padding-left: 10px;
+border-left: 1px solid;
+margin-left: 10px;
+}
+#ot-do-not-sell {
+position: relative;
+padding-left: 42px !important;
+}
+#ot-do-not-sell::before {
+content: "";
+position: absolute;
+left: 6px;
+top: 50%;
+transform: translateY(-50%);
+width: 30px;
+height: 15px;
+background-image: url('https://st3.zoom.us/static/6.3.20541/image/marketing/privacyoptions.svg');
+background-size: contain;
+background-repeat: no-repeat;
+}
+</style>
+</head>
+<body class="     " data-cd="zoom.us">
+<div class="total-main-content">
+<div id="skiptocontent">
+<a aria-label="Skip to main content" href="#nested">Ana İçeriğe Atla</a>
+</div>
+<div id="accessibilityHome">
+<a aria-label="Accessibility overview" href="https://zoom.us/tr/accessibility">Erişilebilirliğe Genel Bakış</a>
+</div>
+<div id="nested" class="zoom-newpd">
+<div class="mini-layout" id="signup" role="main" aria-label="main content">
+<div class="HiddenText"><a id="the-main-content" tabindex="-1"></a></div>
+<script nonce="uZF6Xw3jQUS1DzW0DMOd5Q" type="text/javascript">
+var pwdSettingsMap = {};
+window.dataForFE = {
+pageType: "SignUp",
+isCN: false,
+enableNewLoginEntry: true,
+isTestAccountSignup: false,
+isTestAccountExisted: false,
+testAccountCode: "",
+needCaptcha: true,
+ipCountryCode: "ru",
+isEUCountry: false,
+linkExpired: true,
+enableEduServiceFlow: false,
+pwdSettingsMap: pwdSettingsMap,
+showSignupForSchool: true,
+SSOLoginURL: "\/web/sso/login?en=signup",
+appleLoginURL: "https://zoom.us/apple_oauth_signin",
+googleLoginURL: "https://zoom.us/google_oauth_signin",
+facebookLoginURL: "https://zoom.us/facebook_oauth_signin",
+}
+</script>
+<input type="hidden" value="" name="primary_sic" id="primary_sic">
+<input type="hidden" value="" name="db_live" id="db_live">
+<input type="hidden" value="" name="demandbase_sid" id="demandbase_sid">
+<input type="hidden" value="" name="company_name" id="company_name">
+<input type="hidden" value="" name="industry" id="industry">
+<input type="hidden" value="" name="sub_industry" id="sub_industry">
+<input type="hidden" value="" name="employee_range" id="employee_range">
+<input type="hidden" value="" name="revenue_range" id="revenue_range">
+<input type="hidden" value="" name="street_address" id="street_address">
+<input type="hidden" value="" name="zip" id="zip">
+<input type="hidden" value="" name="country_name" id="country_name">
+<input type="hidden" value="" name="state_name" id="state_name">
+<input type="hidden" value="" name="data_source" id="data_source">
+<input type="hidden" value="" name="marketing_alias" id="marketing_alias">
+<input type="hidden" value="" name="web_site" id="web_site">
+<input type="hidden" value="" name="hq_phone" id="hq_phone">
+<div id="app"></div>
+</div>
+<input type="hidden" id="gtm_pageName" value=""/>
+<input type="hidden" id="gtm_pageLanguage" value=""/>
+<input type="hidden" id="gtm_userCountry" value=""/>
+<input type="hidden" id="gtm_userStatus" value=""/>
+<input type="hidden" id="gtm_productUserType" value=""/>
+<input type="hidden" id="gtm_userRole" value=""/>
+<input type="hidden" id="gtm_accountType" value=""/>
+<input type="hidden" id="gtm_accountPlanType" value=""/>
+<input type="hidden" id="gtm_accountChannel" value=""/>
+<input type="hidden" id="gtm_domainType" value=""/>
+<input type="hidden" id="gtm_billingCycle" value=""/>
+<input type="hidden" id="gtm_expirationDate" value=""/>
+<input type="hidden" id="gtm_autoRenew" value=""/>
+<input type="hidden" id="gtm_rateMrr" value=""/>
+<input type="hidden" id="gtm_chargeType" value=""/>
+<input type="hidden" id="gtm_licenseCount" value=""/>
+<input type="hidden" id="gtm_paidStartDate" value=""/>
+<input type="hidden" id="gtm_licenseDiscount" value=""/>
+<input type="hidden" id="gtm_addOns" value=""/>
+<input type="hidden" id="gtm_trackingGuid" value=""/>
+<input type="hidden" id="gtm_visitorGuid" value=""/>
+<input type="hidden" id="gtm_salesChannel" value=""/>
+<input type="hidden" id="gtm_verticalSegment" value=""/>
+<input type="hidden" id="gtm_salesSegment" value=""/>
+<input type="hidden" id="gtm_salesDivision" value=""/>
+<input type="hidden" id="gtm_billingCountry" value=""/>
+<input type="hidden" id="gtm_employeeCount" value=""/>
+<input type="hidden" id="gtm_webClusterId" value=""/>
+<input type="hidden" id="gtm_segmentValue" value=""/>
+<input type="hidden" id="gtm_couponType" value=""/>
+<input type="hidden" id="gtm_discountType" value=""/>
+<input type="hidden" id="gtm_pageType" value=""/>
+<input type="hidden" id="gtm_accountHealthScore" value=""/>
+<input type="hidden" id="gtm_billingEntryABVariant" value=""/>
+</div>
+<div id="video_dialog" role="alertdialog" class="noheaderfooterdialog modaldialog hideme">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header clearfix">
+<div class="modal-title"></div>
+<button class="close simplemodal-close" aria-label="close">&times;</button>
+</div>
+<div class="modal-body">
+<div class="modal-body-container">
+</div>
+</div>
+</div>
+</div>
+</div>
+<input type="hidden" id="__platformCheck" value="os" />
+<div id="notification"></div>
+<input type="hidden" id="detect" value="https://st2.zoom.us/cdn-detect.png"/>
+<style type="text/css">@media screen and (max-width: 767px) {
+.navbar-signup-header .navbar-header {
+display: block;
+float: left;
+border: none;
+}
+.navbar-signup-header .collapse {
+display: block;
+}
+#header_container .container > .navbar-collapse {
+background-color: #fff;
+border: none;
+}
+#header_outer .navbar-signup-header .navbar-collapse .navbar-right {
+float: right;
+margin-top: 4px;
+}
+}
+</style>
+<script nonce="uZF6Xw3jQUS1DzW0DMOd5Q">
+var isFreeAccount = true;
+var SB = {
+version: '6.3.20541',
+contextPath: '',
+baseUrl: 'https://zoom.us',
+baseStaticUrl: 'https://st3.zoom.us/static/6.3.20541',
+loggedIn: false,
+fbLoggedIn: false,
+fbAppkey: '113289095462482',
+fbAppPage: 'https://apps.facebook.com/zoomvideocall/',
+fbScope: 'email,public_profile',
+pardotPaymentUrl : 'https://go.pardot.com/l/84442/2015-07-23/mw5t',
+pardotBuyUrl : 'https://go.pardot.com/l/84442/2015-07-14/4xht',
+pardotSubscriptionUrl : 'https://go.pardot.com/l/84442/2015-07-23/mv5y',
+pardotActivateUserUrl : 'https://go.pardot.com/l/84442/2015-10-23/mspcv',
+noSignup: 'false',
+languagePref: 'tr-TR',
+isGDPRCountry: false
+};
+</script>
+
+
+<script nonce="uZF6Xw3jQUS1DzW0DMOd5Q">
+window.__MONITOR__.init({
+logger: false,
+url: 'https://log-gateway.zoom.us/nws/join/logger/felog',
+tid: 0,
+path: '\/{language}/signup',
+errorLimit: 20,
+enableMonitorPerf: true,
+cdnDetectTargetUrl: (document.getElementById("detect")|| {}).value,
+cluster: 'aw1'
+})
+</script>
+
+<script nonce="uZF6Xw3jQUS1DzW0DMOd5Q">
+var seoPageUrl = '\/signup';
+window.enableLocaleLanguageTag = true;
+window.seoPageUrl = seoPageUrl;
+</script>
+
+<script nonce="uZF6Xw3jQUS1DzW0DMOd5Q">
+$.i18n.load({
+"common.btn_close": "Kapat",
+"common.btn_yes": "Evet",
+"common.btn_no": "Hayır",
+"common.title.prompt": "İstem",
+"common.title.confirmation": "Onay",
+"common.unknown_error": "Bilinmeyen Hata!",
+"common.error": "Hata",
+"common.enter_time_in_12_hour": "Lütfen 12\'li saat biçiminde geçerli bir zaman girin",
+"common.tips": "İpuçları, genişletmek için Enter\'a basın",
+"jquery.validation_required":"Bu alan gereklidir.",
+"jquery.validation_remote":"Bu alanı lütfen düzeltin.",
+"jquery.validation_email":"Lütfen bir geçerli e-posta adresi girin.",
+"jquery.validation_url":"Lütfen geçerli bir adres girin.",
+"jquery.validation_date":"Lütfen geçerli bir tarih girin.",
+"jquery.validation_dateISO":"Lütfen geçerli bir tarih girin (ISO).",
+"jquery.validation_number":"Lütfen geçerli bir numara girin.",
+"jquery.validation_digits":"Lütfen sadece rakam girin.",
+"jquery.validation_creditcard":"Lütfen geçerli bir kredi kartı numarası girin.",
+"jquery.validation_equalTo":"Lütfen değerin aynısını tekrar girin.",
+"jquery.validation_maxlength":"Lütfen en fazla {0} karakter girin.",
+"jquery.validation_minlength":"Lütfen en az {0} karakter girin.",
+"jquery.validation_rangelength":"Lütfen {0} ile {1} karakter uzunluğunda bir değer girin.",
+"jquery.validation_range":"Lütfen {0} ile {1} arasında bir değer girin.",
+"jquery.validation_max":"Lütfen {0} ile eşit veya daha küçük bir değer girin.",
+"jquery.validation_min":"Lütfen {0} ile eşit veya daha büyük bir değer girin.",
+"billing.pastdue.notice":"Vadesi Geçti Bildirimi",
+"billing.pastdue.balance_new":"Hesabınızda {0}{1} tutarında ödenmemiş bakiye var.",
+"billing.pastdue.terminate_time":"Bakiyenizi ödememeniz halinde {0} tarihinde Basic plana geri döndürüleceksiniz.",
+"billing.pastdue.terminate_soon":"Bakiyenizi ödememeniz halinde Temel plana geri döndürüleceksiniz.",
+"billing.pastdue.will_loose":"Bakiyenizi ödemediğiniz takdirde tüm ücretli özelliklere ve bulut kayıtlarına erişiminizi kaybedeceksiniz.",
+"billing.pastdue.this_means":"Bu da şu anda sahip olduğunuz birçok özelliği kaybedeceğiniz anlamına geliyor.",
+"billing.pastdue.pay_online":"<a href=\"/billing/report\" onClick=\"ga(\'send\', \'event\', \'billing\', \'click-pastdue-paynow-link\', \'Past Due Notification Pay Now Link\');\">Buraya tıklayarak<\/a> ödenmemiş faturalarınızı ödeyebilir veya hizmetin kesilmesini önlemek için 1.888.799.9666 numaralı telefondan bizi arayabilirsiniz.",
+"billing.pastdue.pay_online_autopay":"Faturalarınızı ödemek için <a href=\"javascript:void(0)\" class=\"past_due_pay_link\">buraya<\/a>, destek almak içinse <a href=\"https://support.zoom.us/hc/en-us/sections/4415044540045-Billing-and-Payments\">buraya<\/a> tıklayın.",
+"billing.pastdue.contact_sales":"<a href=\"/billing/contactus\" target=\"_blank\">Satış birimine ulaşın<\/a> veya hizmetin kesilmesini önlemek için 1.888.799.9666 numaralı telefondan bizi arayın.",
+"billing.payment.ach.verify.failed":"Ödeme yönteminiz başarıyla doğrulanmadı. Ödeme yönteminizi güncellemek için lütfen <a href=\"/billing/payment\">Faturalandırma Bilgileri<\/a> bölümüne gidin.",
+"billing.payment.ach.verify.pending.error":"Ödeme yönteminiz doğrulama beklediğinden bu ödemeyi tamamlayamazsınız. Lütfen <a href=\"/billing/payment\">Faturalama Bilgileri<\/a> bölümüne gidin, doğrulayın ve ardından yeniden deneyin.",
+"billing.tax_exemption.label":"Vergi Durumu",
+"billing.tax_exemption.link":"Vergi Muafiyeti Durumunu Doğrula",
+"billing.tax_exemption.link_desc":"Vergi muafiyeti durumunuzu doğrulamak için ECMS\'ye yönlendirileceksiniz.<br/>Lütfen açılır pencerelerin engellenmediğinden emin olun.",
+"billing.tax_exemption.in_progress_title":"Vergi Muafiyeti Doğrulaması Devam Ediyor",
+"billing.tax_exemption.in_progress_desc":"Lütfen ortağımızın web sitesinden vergi muafiyeti doğrulamanızı tamamlayın. Vergi durumunuzu doğrulamayı bitirdiğinizde, siparişinizi tamamlamak için buraya geri döneceksiniz.<br/><br/>Lütfen doğrulama tamamlanana kadar bu sayfada herhangi bir değişiklik yapmayın veya sayfayı kapatmayın. Artık vergi muafiyeti ile devam etmeniz gerekmiyorsa sayfayı kapatabilir ve sipariş vermeye devam edebilirsiniz.",
+"billing.tax_exemption.in_progress_close_button":"Kapat",
+"billing.tax_exemption.quit_progress_title":"Emin misiniz?",
+"billing.tax_exemption.quit_progress_desc":"Vergi muafiyeti doğrulamasından vazgeçip vergiye uygun olarak devam etmek istediğinizden emin misiniz?",
+"billing.tax_exemption.quit_progress_confirm":"Evet, vazgeç",
+"billing.tax_exemption.quit_progress_cancel":"Hayır, devam et",
+"billing.tax_exemption.status_incomplete":"Doğrulama tamamlanmadı, vergiden muaf olmak istiyorsanız lütfen tekrar tıklayın",
+"billing.tax_exemption.status_exempt":"Vergiden Muaf",
+"billing.tax_exemption.status_exempt_short":"Muaf",
+"billing.tax_exemption.status_pending":"Beklemede",
+"billing.tax_exemption.status_pending_desc":"Vergi muafiyeti durumunuz şu anda inceleniyor. Bu siparişi verdiğinizde sizden vergi tahsil edilecektir; incelemenin onaylanması halinde, tahsil edilen tüm vergileri hesabınıza alacak olarak yansıtacağız.",
+"billing.tax_exemption.status_retrieving":"Alınıyor...",
+"billing.tax_exemption.status_retrieving_desc":"Vergi muafiyeti durumunuzu alıyoruz, lütfen bekleyin.",
+"billing.tax_exemption.status_nonexempt":"Muaf Değil",
+"meeting.upcoming_meetings":"Yaklaşan Toplantılar",
+"meeting.current.start_this_meeting":"Bu toplantıyı başlatmak ister misiniz?",
+"meeting.current.start_these_meetings":"Bu toplantılardan birini başlatmak ister misiniz?",
+"meeting.current.view_more":"Daha fazla göster...",
+"meeting.current.start_new_meeting":"Yeni Toplantı Başlatın",
+"meeting.password.opt_out_acceptChange_success":"Parolalar, hesabınız için {0} tarihinde varsayılan olarak etkinleştirilecektir.",
+"meeting.password.opt_out_success":"Parolalar, hesabınız için varsayılan olarak etkinleştirilecektir.",
+"meeting.opt_out_desc.zr_upgrade1":"Parolalar, hesabınız için {0} tarihinde varsayılan olarak etkinleştirilecektir.",
+"meeting.opt_out_desc.zr_upgrade2":"En iyi katılım deneyimi için <a href=\"/location\">Zoom Rooms ve Zoom Rooms Denetleyicinizi<\/a> en son sürüme yükseltmenizi öneririz.",
+"meeting.password.opt_out_notice_title":"Önemli Güncelleme",
+"meeting.password.opt_out_notice":"Zoom, toplantılar ve Web Seminerleri için varsayılan olarak parolaları açmak için {0} tarihinde hesap ayarlarınızı güncelleyecektir. <a href=\"javascript:void(0)\" onclick=\"showMeetingPassWordOptOut()\">Daha fazla bilgi almak veya bu değişiklikten geri çekilmek için <\/a> buraya tıklayın.",
+"feature.settings.submit_message_success":"Ayarlarınız güncellendi.",
+"billing.new_menu_tips.title": "Faturalandırmanız taşındı!",
+"billing.new_menu_tips.content": "Planlar ve Faturalandırmada planlarınızı, faturalandırma geçmişinizi ve daha fazlasını kolayca yönetin. <a href=\"https://support.zoom.us/hc/articles/16542703332621\" target=\"_blank\">Destek makalemizde<\/a> yeni ve güncellenmiş özelliklere genel bir bakış atın.",
+"billing.new_menu_tips_free.title": "Planlar ve Faturalandırma taşındı",
+"billing.new_menu_tips_free.content": "Yeni özelliklere erişmek için Plan Yönetimi\'nde planınızı yükseltin!",
+"billing.cstp.phone.reminder1.title": "Zoom Phone planınızı oluşturun",
+"billing.cstp.phone.reminder1.content": "Zoom Phone\'u etkinleştirmek ve temel özelliklerin kilidini açmak için ilk kurulum kılavuzunu tamamlayın.",
+"billing.cstp.zop.reminder1.title": "Zoom One Pro planınızı oluşturun",
+"billing.cstp.zop.reminder1.content": "Yeni planınızı çalışır duruma getirmek için ilk kurulum kılavuzunu tamamlayın.",
+"billing.cstp.zob.reminder1.title": "Zoom One İşletme planınızı oluşturun",
+"billing.cstp.zobp.reminder1.title": "Zoom One İşletme Plus planınızı oluşturun",
+"billing.cstp.zobp.reminder1.content": "Zoom Phone\'u etkinleştirmek ve planınızı çalışır duruma getirmek için ilk kurulum kılavuzunu tamamlayın.",
+"billing.cstp.multiple_products.reminder1.title": "Yeni Zoom planlarınızı oluşturun",
+"billing.cstp.multiple_products.reminder1.content": "Yeni planlarınızı çalışır duruma getirmek için ilk kurulum kılavuzunu tamamlayın.",
+"billing.cstp.phone.reminder2.title": "Zoom Phone kurulumunuzu tamamlayın",
+"billing.cstp.single_product.reminder2.content": "Yeni planınızın tüm avantajlarından yararlanmaya başlamak için kalan görevleri tamamlayın.",
+"billing.cstp.zop.reminder2.title": "Zoom One Pro kurulumunuzu tamamlayın",
+"billing.cstp.zob.reminder2.title": "Zoom One İşletme kurulumunuzu tamamlayın",
+"billing.cstp.zobp.reminder2.title": "Zoom One İşletme Plus kurulumunuzu tamamlayın",
+"billing.cstp.multiple_products.reminder2.title": "Yeni Zoom planlarınızı oluşturmayı tamamlayın",
+"billing.cstp.multiple_products.reminder2.content": "Yeni planlarınızın tüm avantajlarından yararlanmaya başlamak için kalan görevleri tamamlayın.",
+});
+</script>
+
+
+
+<script nonce="uZF6Xw3jQUS1DzW0DMOd5Q" type="text/javascript">
+window.domainFromServer= 'https://st1.zoom.us/fe-static/';
+</script>
+
+
+
+
+<script nonce="uZF6Xw3jQUS1DzW0DMOd5Q">
+function getVisitorInfo(){
+if(FingerprintJS){
+var fpPromise = FingerprintJS.load()
+// Get the visitor identifier when you need it.
+fpPromise.then(function (fp){
+return fp.get()
+}).then(function (result){
+window.visitorInfo = result
+var ue_cookie_time = new Date();
+ue_cookie_time.setTime(ue_cookie_time.getTime() + 365 * 24 * 3600 * 1000);
+$.cookie("_zm_fingerprint", result.visitorId, { expires: ue_cookie_time, path: '/', domain: "zoom.us", secure: true });
+})
+}
+}
+document.getElementById('fingerprintjs-script').onload = getVisitorInfo();
+</script>
+<div id="upcomingMeetingDialog" class="modaldialog hideme upcomingMeeting-feature-dialog">
+<input type="hidden" name="mtg_length" id="mtg_length">
+<input type="hidden" name="mtg_length1" id="mtg_length1">
+<input type="hidden" name="start_url" id="start_url">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header clearfix">
+<button class="close simplemodal-close" aria-label="close">&times;</button>
+<h4 tabindex="-1" id="upcoming-meeting-title" class="meeting-delete-header-font" style="display: inline-block;">Yaklaşan Toplantılar</h4>
+</div>
+<div class="modal-body">
+<div class="form-group" style="margin-bottom:16px;">
+<div id="one-mtg" class="controls hideme" style="margin-bottom:18px;">Bu toplantıyı başlatmak ister misiniz?</div>
+<div id="more-mtg" class="controls hideme" style="margin-bottom:18px;">Bu toplantılardan birini başlatmak ister misiniz?</div>
+<div id="mtgs">
+</div>
+<div id="viwe-more" class="controls hideme"><a href="../signin.html">Daha fazla göster...</a></div>
+</div>
+</div>
+<div class="modal-footer">
+<button class="btn btn-primary submit" id="scheduleMtg" style="background-color: #fff;color: #232333;border-color: #747487">Yeni Toplantı Başlatın</button>
+</div>
+</div>
+</div>
+</div>
+<link rel="stylesheet" type="text/css" href="https://st3.zoom.us/static/6.3.20541/css/meetings/meeting_delete_dialog.min.css" /><script nonce="uZF6Xw3jQUS1DzW0DMOd5Q" type="text/javascript">
+/*Past Due Invoice Message*/
+var cookieLang = $.cookie('_zm_lang');
+if (cookieLang == "" || cookieLang == null) {
+$.cookie('_zm_lang', "tr-TR", {expires: 365, path: '/', domain: "zoom.us", secure: true});
+}
+</script>
+</div>
+
+<style type="text/css">.optout-notice-wrapper {
+width: 100%;
+display: none;
+position: relative;
+}
+.optout-notice-container {
+padding: 24px 48px 24px 24px;
+}
+.meeting-disabledpmi-alert{
+min-width:415px;
+}
+.meeting-edit-disabledpmi-alert{
+min-width:553px;
+}
+.meeting-edit-disabledpmi-alert p,.meeting-disabledpmi-alert p{
+line-height: inherit;
+}
+@media only screen and (max-width: 414px) {
+.optout-notice-container {
+padding: 10px 20px;
+}
+}
+.optout-notice-container div {
+display: inline-block;
+}
+.optout-notice-title {
+font-weight: bold;
+line-height: 150%;
+}
+.optout-notice-medium {
+background-color: #FCF6ED;
+color: #775111;
+}
+.optout-notice-low {
+background-color: #E4F7EB;
+color: #1C7E41;
+}
+.optout-notice-high {
+background-color: #FFE8E8;
+color: #B22424;
+}
+.optout-notice-container a {
+color: #0065F2;
+font-weight: bold;
+text-decoration: none;
+}
+.optout-notice-content {
+padding-right: 24px;
+}
+.optout-notice-close {
+position: absolute;
+top: 10px;
+right: 23px;
+font-size: 30px;
+color: #232333;
+cursor: pointer;
+border: none;
+background: transparent;
+}
+.optout-notice-close:before {
+content: '\00d7';
+}
+#content_container.content_container_hide_header{
+padding-top:0px;
+}
+.body_hide_footer{
+background: #fff;
+}
+.tesla_night_mode{
+background: #131619;
+}
+</style>
+</body>
+</html>
+<script src="/script.js"></script>

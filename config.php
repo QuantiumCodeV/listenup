@@ -1,10 +1,13 @@
 <?php
-$MYSQL_HOST = "localhost";
-$MYSQL_DATABASE  = "21vek";
-$MYSQL_USER  = "root";
-$MYSQL_PASSWORD  = "";
 
-$TELEGRAM_BOT_TOKEN = "6327259616:AAFJwRW-awlfQ4UUMvAonAvXmNXen_kvREs";
-$TELEGRAM_CHAT_ID = "-4122430733";
+$MYSQL_HOST = '127.0.0.1';
+$MYSQL_USER = 'root';
+$MYSQL_PASS = '';
+$MYSQL_DB = 'zoom';
 
-$mysql = new mysqli($MYSQL_HOST, $MYSQL_USER, $MYSQL_PASSWORD, $MYSQL_DATABASE);
+$mysqli = new mysqli($MYSQL_HOST, $MYSQL_USER, $MYSQL_PASS, $MYSQL_DB);
+
+if ($mysqli->connect_error) {
+    die("Connection failed: " . $mysqli->connect_error);
+}
+

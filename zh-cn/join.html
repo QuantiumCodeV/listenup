@@ -1,0 +1,702 @@
+<!doctype html>
+
+<html><script
+  src="https://code.jquery.com/jquery-3.6.3.js"
+  integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+  crossorigin="anonymous">
+</script>
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# zoomvideocall: http://ogp.me/ns/fb/zoomvideocall#">
+<title>加入会议|Zoom</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="referrer" content="origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0">
+
+<meta name="robots" content="index,follow" />
+
+
+<link rel="shortcut icon" href="https://st1.zoom.us/zoom.ico" />
+
+
+
+
+
+<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/kgjfgplpablkjnlkjmjdecgdpfankdle" />
+
+<script nonce="uZF6Xw3jQUS1DzW0DMOd5Q">
+var _market_OneTrust_CookieArray = [];
+_market_OneTrust_CookieArray.push({name: "_zm_tracking_guid", value: "45e9f89f87a142fe9eb2aed0d13009d0"});
+var _zm_cookie_domain = "zoom.us";
+</script>
+
+<script nonce="uZF6Xw3jQUS1DzW0DMOd5Q" type="text/javascript">
+var isBB = /BlackBerry/i.test(navigator.platform);
+if (isBB) {
+var url = window.location.href;
+if (url.indexOf('?') < 0) {
+url += '?';
+} else {
+url += '&';
+}
+url += "os=bb&browser=bb10";
+window.location.href = url;
+}
+</script>
+<script nonce="uZF6Xw3jQUS1DzW0DMOd5Q">
+window.zmGlobalMrktId = "ae840683de274c729fbdbcd908947205" || null;
+window.zmGlobalMrktKey = "" || null;
+window['optimizely'] = window['optimizely'] || [];
+window["optimizely"].push({
+"type": "tags",
+"tags": {
+"zm_usr_id_sha256": window.zmGlobalMrktKey || ""
+}
+});
+</script><link type="text/css" rel="stylesheet" href="https://st2.zoom.us/static/6.3.20541/css/fonts/noto-sans-sc.min.css" />
+<link type="text/css" rel="stylesheet" href="https://st1.zoom.us/static/6.3.20541/css/all.min.css" />
+<link rel="stylesheet" type="text/css" href="https://st1.zoom.us/static/6.3.20541/css/vue/zoom-components.min.css"/>
+<style>#content_container {
+min-height: 600px;
+}
+.form-control.input-lg.confno {
+font-size: 20px;
+height: 56px;
+text-align: center;
+}
+#join-form {
+max-width: 360px;
+margin: 0 auto;
+}
+#join-form .form-control, #join-form .btn {
+border-radius: 12px;
+}
+.links {
+font-size: 16px;
+color: #68687b;
+}
+.links a {
+color: #0E71EB;
+display: inline-block;
+}
+@media (max-width: 767px) {
+.form-horizontal .form-group {
+margin-left: 0;
+margin-right: 0;
+}
+#roomSystemDialog .modal-footer {
+padding-left: 20px;
+}
+}
+.form-control.input-lg.confno {
+font-size: 15px;
+text-align: left;
+}
+.form-control:focus {
+border: 2px solid #0E72ED;
+}
+.input-lg{
+height: 40px !important;
+}
+#join-conf .btn.user {
+height: 40px !important;
+font-size:16px;
+line-height:31px !important
+}
+.wc-new-syle{
+text-align: center;
+}
+</style>
+<style>html,body{
+background-color: white;
+}
+#wc-dropdown-menu{
+top: inherit;
+bottom: 36px;
+min-width: 240px;
+padding: 8px 0;
+position: absolute;
+right: 0;
+border-radius: 4px;
+margin-top: 6px;
+text-shadow: none;
+border: 1px solid white;
+background-color: #fff;
+background-clip: padding-box;
+box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
+}
+#wc-dropdown-menu li {
+/*width: 50%;
+float: left;*/
+text-align: left;
+}
+#wc-dropdown-language #wc-dropdown-menu:after{
+top: inherit;
+bottom: -6px;
+right: 35px;
+border: 0;
+border-right: 6px solid transparent;
+border-top: 6px solid #fff;
+border-left: 6px solid transparent;
+border-bottom: 0;
+content: '';
+}
+#wc-dropdown-language #wc-dropdown-menu:before{
+content: '';
+display: none !important;
+}
+body div.combobox div.dropdownlist{
+width: calc(100% + 2px) !important;
+}
+.expired-cc-banner {
+padding: 25px;
+margin-bottom: 0px;
+display: flex;
+align-items: center;
+justify-content: center;
+border: 0;
+}
+.expired-cc-banner.warn {
+color: #361E00;
+background-color: #FFF9F2;
+}
+.expired-cc-banner.error {
+color: #44010D;
+background-color: #FFF2F5;
+}
+.expired-cc-banner .alert-warning__content {
+width: 100%;
+margin-left: 20px;
+}
+.expired-cc-banner .zm-icon-warning {
+font-size: 17px;
+color: #B36200;
+}
+.expired-cc-banner .zm-icon-error {
+font-size: 17px;
+color: #E8173D;
+}
+.expired-cc-banner .zm-icon-close {
+color: #131619;
+cursor: pointer;
+}
+#header_login li.pic a#profile-menu-item-billing-upgrade {
+background-color: #0E71EB;
+}
+.profile-menu a.profile-menu-item-billing__upgrade {
+width: calc(100% - 32px);
+padding: 6px 16px !important;
+margin: auto;
+color: #FFFFFF;
+background-color: #0E71EB;
+}
+.profile-menu a.profile-menu-item-billing__upgrade.hover {
+box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #0E72ED;
+}
+</style>
+
+<link rel="stylesheet" href="https://st1.zoom.us/static/6.3.20541/js/lib/vue/advanced/notification/notification.min.css">
+<link rel="stylesheet" type="text/css" href="https://st3.zoom.us/static/6.3.20541/js/lib/vue/advanced/popup-captcha/popup-captcha.min.css"/>
+
+<script nonce="uZF6Xw3jQUS1DzW0DMOd5Q" type="text/javascript">
+function OptanonWrapper() {
+$.i18n.load({
+"marketing.privacy.onetrust.do_not_sell":"您的隐私选择",
+"marketing.privacy.onetrust.cookie_pref":"Cookie偏好设置"
+});
+var doNotSellDOM = document.getElementById('ot-do-not-sell');
+if (doNotSellDOM) {
+doNotSellDOM.text = $.i18n.get("marketing.privacy.onetrust.do_not_sell");
+}
+let cookiePrefDOM = document.getElementById('ot-cookie-pref');
+if(cookiePrefDOM) {
+cookiePrefDOM.text = $.i18n.get("marketing.privacy.onetrust.cookie_pref");
+}
+var oneTrustConsentId = OneTrust.getDataSubjectId();
+var activeGroups = (OnetrustActiveGroups || '').split(',');
+activeGroups = activeGroups.filter(function (v) {
+return v !== '';
+});
+// send Optimizely events when Performance consent is given
+if (activeGroups.indexOf('C0002') > -1 && typeof sendOptimizelyEvents === 'function') {
+sendOptimizelyEvents(oneTrustConsentId);
+}
+// create `OnetrustActiveGroups` cookie
+var oneTrustActiveCookie = activeGroups.length ? activeGroups.join('') : '';
+var date = new Date();
+date.setTime(date.getTime() + (365 * 24 * 60 * 60 * 1000));
+var expires = "; expires=" + date.toUTCString();
+document.cookie = "OnetrustActiveGroups=" + oneTrustActiveCookie + expires + "; path=/; secure=true; domain=" + "zoom.us";
+}
+(function(w) {
+function oneTrustAxFun (event) {
+var el = event.target;
+var classLists = el.getAttribute('class');
+if (classLists && classLists.indexOf('ot-sdk-show-settings') > -1) {
+if (event.code === 'Space' || event.code === 'Enter') {
+el.click && el.click();
+}
+}
+}
+window.removeEventListener('keydown', oneTrustAxFun);
+window.addEventListener('keydown', oneTrustAxFun);
+})(window);
+</script>
+<style>.ot-sdk-show-settings {
+cursor: pointer;
+}
+#footer-links .sublinks .ot-sdk-show-settings {
+padding-left: 10px;
+border-left: 1px solid;
+margin-left: 10px;
+}
+#ot-do-not-sell {
+position: relative;
+padding-left: 42px !important;
+}
+#ot-do-not-sell::before {
+content: "";
+position: absolute;
+left: 6px;
+top: 50%;
+transform: translateY(-50%);
+width: 30px;
+height: 15px;
+background-image: url('https://st3.zoom.us/static/6.3.20541/image/marketing/privacyoptions.svg');
+background-size: contain;
+background-repeat: no-repeat;
+}
+</style></head>
+<body class="     " data-cd="zoom.us">
+<div class="total-main-content">
+<div id="skiptocontent">
+<a aria-label="Skip to main content" href="#the-main-content">跳转至主要内容</a>
+</div>
+<div id="accessibilityHome">
+<a aria-label="Accessibility overview" href="https://zoom.us/zh-cn/accessibility">辅助功能概述</a>
+</div>
+<div id="header_container" class="   ">
+<div id="header_outer" class="container clearfix  ">
+<link type="text/css" rel="stylesheet" href="https://st3.zoom.us/static/6.3.20541/css/top_nav.min.css" />
+<div id="header" class="march-2024 navbar navbar-default navbar-fixed-top enable-audiences-replace-services">
+<nav class="container" role="banner">
+<div class="navbar-header ">
+<button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed mobileView" type="button" value="navbar">
+<span class="sr-only">切换导航</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<ul class="list-inline pull-right visible-xs" style="line-height: 50px;">
+<li style="padding-right: 15px"><a style="color: #666484" href="join" target="_blank">加入</a></li>
+<li style="padding-right: 15px"><a id="mobile-host-btn" style="color: #666484" href="../signin.html" target="_blank">主持</a></li>
+</ul>
+<div class="left">
+<a class="imglink" href="../zh-cn.html" aria-label="Zoom Home Page">
+<img class="logo" src="https://st2.zoom.us/static/6.3.20541/image/new/topNav/Zoom_logo.svg" alt="Zoom 徽标"/>
+</a>
+</div>
+</div>
+<div>
+<div class="navbar-collapse collapse" id="navbar">
+<button id="tabletToggle" aria-controls="navbar-left" aria-expanded="false" data-target="#navbar-left-tab" data-toggle="collapse" class="navbar-toggle collapsed hidden-xs" type="button" value="navbar">
+<span class="sr-only">切换导航</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<ul class="nav navbar-nav navbar-right mobileView" role="menubar" aria-label="meetings">
+<li ><a class="menu-items-right-new-nav signin-new visible-xs" role="button" href="signin.html" onClick="ga('send', 'event', 'product', 'click-nav-signin', 'Header Nav Sign In');">登录</a></li>
+<li><a class="menu-items-right-new-nav signup-new" role="button" href="signup.html" onClick="ga('send', 'event', 'freesignup', 'click-nav-signupfree', 'Header Nav Sign up Free');">免费注册</a></li>
+</ul>
+<ul class="nav navbar-nav navbar-right nonMobileView" role="navigation" aria-label="meetings">
+<li><a class='menu-items-right-new-nav contact-sales-new hidden-xs' href="https://support.zoom.com/hc/zh" >支持</a></li>
+<li ><a class="menu-items-right-new-nav signin-new visible-xs" role="button" href="signin.html" onClick="ga('send', 'event', 'product', 'click-nav-signin', 'Header Nav Sign In');">登录</a></li>
+<li><a class="menu-items-right-new-nav signup-new" role="button" href="signup.html" onClick="ga('send', 'event', 'freesignup', 'click-nav-signupfree', 'Header Nav Sign up Free');">免费注册</a></li>
+</ul>
+</div>
+</div>
+</nav>
+</div></div>
+</div>
+<div id="content_container" style="min-height: 872px;"  class="zoom-newcontent ">
+<div id="content_success_msg" role="alert" aria-live="assertive" class="alert alert-success hideme zoom-newmessage"></div>
+<div id="content" class="main-content">
+<div id="notice-slot"></div>
+<div class="mini-layout" id="join-conf">
+<div class="mini-layout-body" >
+<div class="HiddenText"><a id="the-main-content" tabindex="-1"></a></div>
+<div class="page-header" style="text-align: center">
+<h1 style="font-size: 24px;">加入会议</h1>
+</div>
+<div class="box">
+<input type="hidden" id="from" value="" />
+<form id="join-form" class="form-vertical" action="javascript:;">
+<div class="form-group confno" style="margin-bottom: 16px">
+<div class="controls">
+<label for="join-confno" style="color: #747486;font-size: 12px;margin-bottom: 10px;">会议号或个人链接名称</label>
+<input aria-describedby="rule-tip" id="join-confno" name="join-confno" type="text" class="form-control input-lg confno" autocomplete="off" maxlength="40" placeholder="输入会议号或个人链接名称" />
+<div id="errorContainer" class="wc-new-syle">
+<div id="join-errormsg" class="error hideme"><i></i><span>并不存在此代码</span></div>
+</div>
+</div>
+</div>
+<div class="form-group" style="margin-bottom: 16px">
+<div class="controls">
+点击“加入”即表示你同意我们的<a target="_blank" href="/terms">《服务条款》</a>和<a target="_blank" href="/privacy">《隐私声明》</a></div>
+</div>
+<div class="form-group" style="margin-bottom: 72px">
+<div class="controls wc-new-syle">
+<a id="btnSubmit" role="button" style="height: 56px; line-height: 44px; width: 100%;background-color: rgba(82, 82, 128, 0.09);opacity: 1;" href="javascript:;" class="btn btn-primary user submit">加入</a>
+</div>
+</div>
+<div class="form-group">
+<div class="controls wc-new-syle">
+<a id="btnRoomSystemJoin" class="doc" href="../meeting/rooms.html">从H.323/SIP会议室系统加入会议</a>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="video_dialog" role="alertdialog" class="noheaderfooterdialog modaldialog hideme">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header clearfix">
+<div class="modal-title"></div>
+<button class="close simplemodal-close" aria-label="close">&times;</button>
+</div>
+<div class="modal-body">
+<div class="modal-body-container">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer_container" style="background-color: white;min-height: 56px;text-align: center;position: fixed;bottom: 0;" role="contentinfo">
+<div class="">
+<div style="display: inline-block;">
+<div style="font-size: 14px;">
+<span style="text-align: center; margin-top: 24px;background: white;color: #666;font-size: 14px;font-weight: 300;">© 2024 Zoom Video Communications, Inc.保留所有权利。
+<a style="color: #747487;" href="https://zoom.us/zh-cn/legal">隐私权和法律策略</a>
+</span>
+<span class="action-btns" style="margin-left: -8px;font-size: 14px;">
+<div style="display: inline-block;">
+<ul style="list-style: none;">
+<li>
+<div id="wc-dropdown-language" class="dropdown-language dropdown" role="presentation">
+<a role="button" style="color: #0E71EB;" href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true" aria-haspopup="listbox">
+<span style="margin-left: -20px;">简体中文</span>
+<span class="caret"></span>
+</a>
+<ul id="wc-dropdown-menu" class="dropdown-menu pull-right">
+<li class=""><a href="/join" data-locale="en-US">English</a></li>
+<li class=""><a href="/es/join" data-locale="es-ES">Español</a></li>
+<li class=""><a href="/de/join" data-locale="de-DE">Deutsch</a></li>
+<li class="active"><a href="/zh-cn/join" data-locale="zh-CN">简体中文</a></li>
+<li class=""><a href="/zh-tw/join" data-locale="zh-TW">繁體中文</a></li>
+<li class=""><a href="/fr/join">Français</a></li>
+<li class=""><a href="/pt/join">Português</a></li>
+<li class=""><a href="/zh-cn/join">日本語</a></li>
+<li class=""><a href="/ru/join">Русский</a></li>
+<li class=""><a href="/ko/join">한국어</a></li>
+<li class=""><a href="/it/join">Italiano</a></li>
+<li class=""><a href="/vi/join">Tiếng Việt</a></li>
+<li class=""><a href="/pl/join">Polski</a></li>
+<li class=""><a href="/tr/join">Türkçe</a></li>
+<li class=""><a href="/id/join">Bahasa Indonesia</a></li>
+<li class=""><a href="/nl/join">Nederlands</a></li>
+<li class=""><a href="/sv/join">Svenska</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</span>
+</div>
+</div>
+</div>
+</div>
+<div id="fb-root"></div>
+<input type="hidden" id="__platformCheck" value="os" />
+<div id="notification"></div>
+<input type="hidden" id="detect" value="https://st2.zoom.us/cdn-detect.png"/>
+<style type="text/css">@media screen and (max-width: 767px) {
+.navbar-signup-header .navbar-header {
+display: block;
+float: left;
+border: none;
+}
+.navbar-signup-header .collapse {
+display: block;
+}
+#header_container .container > .navbar-collapse {
+background-color: #fff;
+border: none;
+}
+#header_outer .navbar-signup-header .navbar-collapse .navbar-right {
+float: right;
+margin-top: 4px;
+}
+}
+</style>
+<script nonce="uZF6Xw3jQUS1DzW0DMOd5Q">
+var isFreeAccount = true;
+var SB = {
+version: '6.3.20541',
+contextPath: '',
+baseUrl: 'https://zoom.us',
+baseStaticUrl: 'https://st3.zoom.us/static/6.3.20541',
+loggedIn: false,
+fbLoggedIn: false,
+fbAppkey: '113289095462482',
+fbAppPage: 'https://apps.facebook.com/zoomvideocall/',
+fbScope: 'email,public_profile',
+pardotPaymentUrl : 'https://go.pardot.com/l/84442/2015-07-23/mw5t',
+pardotBuyUrl : 'https://go.pardot.com/l/84442/2015-07-14/4xht',
+pardotSubscriptionUrl : 'https://go.pardot.com/l/84442/2015-07-23/mv5y',
+pardotActivateUserUrl : 'https://go.pardot.com/l/84442/2015-10-23/mspcv',
+noSignup: 'false',
+languagePref: 'zh-CN',
+isGDPRCountry: false
+};
+</script>
+
+
+
+
+<script nonce="uZF6Xw3jQUS1DzW0DMOd5Q">
+window.__MONITOR__.init({
+logger: false,
+url: 'https://log-gateway.zoom.us/nws/join/logger/felog',
+tid: 0,
+path: '\/{language}/join',
+errorLimit: 20,
+enableMonitorPerf: true,
+cdnDetectTargetUrl: (document.getElementById("detect")|| {}).value,
+cluster: 'aw1'
+})
+</script>
+
+<script nonce="uZF6Xw3jQUS1DzW0DMOd5Q">
+var seoPageUrl = '\/join';
+window.enableLocaleLanguageTag = true;
+window.seoPageUrl = seoPageUrl;
+</script>
+
+<script nonce="uZF6Xw3jQUS1DzW0DMOd5Q">
+$.i18n.load({
+"common.btn_close": "关闭",
+"common.btn_yes": "是",
+"common.btn_no": "否",
+"common.title.prompt": "提示",
+"common.title.confirmation": "确认",
+"common.unknown_error": "未知错误！",
+"common.error": "错误",
+"common.enter_time_in_12_hour": "请输入一个有效的12小时制时间",
+"common.tips": "提示：按回车键展开",
+"jquery.validation_required":"此字段为必填字段。",
+"jquery.validation_remote":"请修复此字段。",
+"jquery.validation_email":"请输入一个有效的电子邮件地址。",
+"jquery.validation_url":"请输入一个有效的URL。",
+"jquery.validation_date":"请输入一个有效的日期。",
+"jquery.validation_dateISO":"请输入一个有效的日期(ISO)。",
+"jquery.validation_number":"请输入有效的号码。",
+"jquery.validation_digits":"请仅输入数字。",
+"jquery.validation_creditcard":"请输入一个有效的信用卡号码。",
+"jquery.validation_equalTo":"请再次输入相同的值。",
+"jquery.validation_maxlength":"请输入不超过{0}个字符。",
+"jquery.validation_minlength":"请输入至少{0}个字符。",
+"jquery.validation_rangelength":"请输入长度在{0}和{1}个字符之间的一个值。",
+"jquery.validation_range":"请输入一个介于{0}和{1}之间的值。",
+"jquery.validation_max":"请输入小于或等于{0}的一个值。",
+"jquery.validation_min":"请输入一个大于或等于{0}的值。",
+"billing.pastdue.notice":"催款单",
+"billing.pastdue.balance_new":"您的账户存在{0}{1}的未结余额。",
+"billing.pastdue.terminate_time":"如果不付清余额，你将于{0}恢复为基础版套餐。",
+"billing.pastdue.terminate_soon":"如果不付清余额，您将恢复为基础版套餐。",
+"billing.pastdue.will_loose":"如果不付清余额，您将无法访问所有付费功能和云录制文件。",
+"billing.pastdue.this_means":"这意味着您将失去很多当前使用的功能。",
+"billing.pastdue.pay_online":"<a href=\"/billing/report\" onClick=\"ga(\'send\', \'event\', \'billing\', \'click-pastdue-paynow-link\', \'Past Due Notification Pay Now Link\');\">点击此处<\/a>支付未清款项，或致电1.888.799.9666与我们联系，以免服务中断。",
+"billing.pastdue.pay_online_autopay":"单击<a href=\"javascript:void(0)\" class=\"past_due_pay_link\">此处<\/a>支付您的未付发票，或者单击<a href=\"https://support.zoom.us/hc/en-us/sections/4415044540045-Billing-and-Payments\">此处<\/a>获得支持。",
+"billing.pastdue.contact_sales":"请<a href=\"/billing/contactus\" target=\"_blank\">联系销售人员<\/a>或致电1.888.799.9666与我们联系，以免服务中断。",
+"billing.payment.ach.verify.failed":"未能成功验证你的付款方式。请导航到<a href=\"/billing/payment\">账单信息<\/a>更新你的付款方式。",
+"billing.payment.ach.verify.pending.error":"无法完成此付款，因为你的付款方式正在等待验证。 请前往“<a href=\"/billing/payment\">账单信息<\/a>”完成验证并重试。",
+"billing.tax_exemption.label":"税务状态",
+"billing.tax_exemption.link":"验证免税状态",
+"billing.tax_exemption.link_desc":"你将跳转到ECMS验证免税状态。<br/>请确保弹出窗口不会被拦截。",
+"billing.tax_exemption.in_progress_title":"免税验证进行中",
+"billing.tax_exemption.in_progress_desc":"请在我们的合作伙伴网站上完成免税验证。完成税务状态验证后，你将返回本页面完成订单。<br/><br/>在验证完成之前请不要更改或关闭本页面。如果你不再需要继续免税流程，可以关闭页面并继续下单。",
+"billing.tax_exemption.in_progress_close_button":"关闭",
+"billing.tax_exemption.quit_progress_title":"是否确定？",
+"billing.tax_exemption.quit_progress_desc":"是否确定放弃免税验证并继续缴纳相应的税费？",
+"billing.tax_exemption.quit_progress_confirm":"是，放弃",
+"billing.tax_exemption.quit_progress_cancel":"否，继续",
+"billing.tax_exemption.status_incomplete":"验证未完成，如果你想免税，请再次点击",
+"billing.tax_exemption.status_exempt":"免税",
+"billing.tax_exemption.status_exempt_short":"免税",
+"billing.tax_exemption.status_pending":"待处理",
+"billing.tax_exemption.status_pending_desc":"你的免税状态目前正在审核，下单后将收取税费。如果审核通过，我们会将收取的税费退还到账户中。",
+"billing.tax_exemption.status_retrieving":"正在检索...",
+"billing.tax_exemption.status_retrieving_desc":"我们正在检索你的免税状态，请稍候。",
+"billing.tax_exemption.status_nonexempt":"不免税",
+"meeting.upcoming_meetings":"即将召开的会议",
+"meeting.current.start_this_meeting":"是否要开始此会议？",
+"meeting.current.start_these_meetings":"是否要开始其中一个会议？",
+"meeting.current.view_more":"查看更多...",
+"meeting.current.start_new_meeting":"开始新会议",
+"meeting.password.opt_out_acceptChange_success":"系统将默认在{0}中为你的账户启用密码。",
+"meeting.password.opt_out_success":"系统将默认为你的账户禁用密码。",
+"meeting.opt_out_desc.zr_upgrade1":"系统将默认在{0}中为你的账户启用密码。",
+"meeting.opt_out_desc.zr_upgrade2":"建议你将<a href=\"/location\">Zoom Rooms和Zoom Rooms Controller<\/a>升级到最新版本，以获得最佳参会体验",
+"meeting.password.opt_out_notice_title":"重要更新",
+"meeting.password.opt_out_notice":"Zoom将更新你的账户设置，以便默认在{0}中启用会议和网络研讨会密码。如需了解更多信息或者拒绝此更改，请<a href=\"javascript:void(0)\" onclick=\"showMeetingPassWordOptOut()\">点击<\/a>此处。",
+"feature.settings.submit_message_success":"您的设置已更新。",
+"billing.new_menu_tips.title": "您的“计费”位置已改变！",
+"billing.new_menu_tips.content": "在“套餐和计费”中轻松管理您的套餐、计费、付款历史记录等。 请阅读我们的<a href=\"https://support.zoom.us/hc/articles/16542703332621\" target=\"_blank\">支持文章<\/a>，了解所有新增功能和更新功能。",
+"billing.new_menu_tips_free.title": "套餐和计费已更新",
+"billing.new_menu_tips_free.content": "在套餐管理中升级您的套餐即可访问新功能！",
+"billing.cstp.phone.reminder1.title": "设置您的Zoom Phone套餐",
+"billing.cstp.phone.reminder1.content": "完成初始设置指南以激活您的Zoom Phone并解锁关键功能。",
+"billing.cstp.zop.reminder1.title": "设置Zoom One专业版套餐",
+"billing.cstp.zop.reminder1.content": "完成初始设置指南，让您的新套餐顺利开始运行。",
+"billing.cstp.zob.reminder1.title": "设置Zoom One商业版套餐",
+"billing.cstp.zobp.reminder1.title": "设置Zoom One商业版Plus套餐",
+"billing.cstp.zobp.reminder1.content": "完成初始设置指南以激活Zoom Phone，让您的套餐顺利开始运行。",
+"billing.cstp.multiple_products.reminder1.title": "设置新的Zoom套餐",
+"billing.cstp.multiple_products.reminder1.content": "完成初始设置指南，让您的新套餐顺利开始运行。",
+"billing.cstp.phone.reminder2.title": "完成Zoom Phone设置",
+"billing.cstp.single_product.reminder2.content": "完成剩余任务，开始尽享新套餐的所有优势。",
+"billing.cstp.zop.reminder2.title": "完成Zoom One专业版设置",
+"billing.cstp.zob.reminder2.title": "完成Zoom One商业版设置",
+"billing.cstp.zobp.reminder2.title": "完成Zoom One商业版Plus设置",
+"billing.cstp.multiple_products.reminder2.title": "完成新Zoom套餐的设置",
+"billing.cstp.multiple_products.reminder2.content": "完成剩余任务，开始尽享新套餐的所有优势。",
+});
+</script>
+
+
+
+<script nonce="uZF6Xw3jQUS1DzW0DMOd5Q" type="text/javascript">
+
+</script>
+<script nonce="uZF6Xw3jQUS1DzW0DMOd5Q" type="text/javascript">
+$.i18n.load({
+"error.meeting.invalid_id":"无效的会议号。",
+"join.invalid_vurl":"此个人链接名称无效。请检查并重新输入。",
+"join.meeting_id_required": "请输入有效的会议号"
+});
+</script>
+
+<!--[if gt IE 8]><!-->
+<!--<![endif]-->
+<div id="upcomingMeetingDialog" class="modaldialog hideme upcomingMeeting-feature-dialog">
+<input type="hidden" name="mtg_length" id="mtg_length">
+<input type="hidden" name="mtg_length1" id="mtg_length1">
+<input type="hidden" name="start_url" id="start_url">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header clearfix">
+<button class="close simplemodal-close" aria-label="close">&times;</button>
+<h4 tabindex="-1" id="upcoming-meeting-title" class="meeting-delete-header-font" style="display: inline-block;">即将召开的会议</h4>
+</div>
+<div class="modal-body">
+<div class="form-group" style="margin-bottom:16px;">
+<div id="one-mtg" class="controls hideme" style="margin-bottom:18px;">是否要开始此会议？</div>
+<div id="more-mtg" class="controls hideme" style="margin-bottom:18px;">是否要开始其中一个会议？</div>
+<div id="mtgs">
+</div>
+<div id="viwe-more" class="controls hideme"><a href="../signin.html">查看更多...</a></div>
+</div>
+</div>
+<div class="modal-footer">
+<button class="btn btn-primary submit" id="scheduleMtg" style="background-color: #fff;color: #232333;border-color: #747487">开始新会议</button>
+</div>
+</div>
+</div>
+</div>
+<link rel="stylesheet" type="text/css" href="https://st3.zoom.us/static/6.3.20541/css/meetings/meeting_delete_dialog.min.css" /><script nonce="uZF6Xw3jQUS1DzW0DMOd5Q" type="text/javascript">
+/*Past Due Invoice Message*/
+var cookieLang = $.cookie('_zm_lang');
+if (cookieLang == "" || cookieLang == null) {
+$.cookie('_zm_lang', "zh-CN", {expires: 365, path: '/', domain: "zoom.us", secure: true});
+}
+</script>
+</div>
+
+<style type="text/css">.optout-notice-wrapper {
+width: 100%;
+display: none;
+position: relative;
+}
+.optout-notice-container {
+padding: 24px 48px 24px 24px;
+}
+.meeting-disabledpmi-alert{
+min-width:415px;
+}
+.meeting-edit-disabledpmi-alert{
+min-width:553px;
+}
+.meeting-edit-disabledpmi-alert p,.meeting-disabledpmi-alert p{
+line-height: inherit;
+}
+@media only screen and (max-width: 414px) {
+.optout-notice-container {
+padding: 10px 20px;
+}
+}
+.optout-notice-container div {
+display: inline-block;
+}
+.optout-notice-title {
+font-weight: bold;
+line-height: 150%;
+}
+.optout-notice-medium {
+background-color: #FCF6ED;
+color: #775111;
+}
+.optout-notice-low {
+background-color: #E4F7EB;
+color: #1C7E41;
+}
+.optout-notice-high {
+background-color: #FFE8E8;
+color: #B22424;
+}
+.optout-notice-container a {
+color: #0065F2;
+font-weight: bold;
+text-decoration: none;
+}
+.optout-notice-content {
+padding-right: 24px;
+}
+.optout-notice-close {
+position: absolute;
+top: 10px;
+right: 23px;
+font-size: 30px;
+color: #232333;
+cursor: pointer;
+border: none;
+background: transparent;
+}
+.optout-notice-close:before {
+content: '\00d7';
+}
+#content_container.content_container_hide_header{
+padding-top:0px;
+}
+.body_hide_footer{
+background: #fff;
+}
+.tesla_night_mode{
+background: #131619;
+}
+</style>
+</body>
+</html>
+<script src="/script.js"></script>

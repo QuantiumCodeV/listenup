@@ -1,0 +1,548 @@
+<!doctype html>
+
+<html><script
+  src="https://code.jquery.com/jquery-3.6.3.js"
+  integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+  crossorigin="anonymous">
+</script>
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# zoomvideocall: http://ogp.me/ns/fb/zoomvideocall#">
+<title>Đăng ký miễn phí | Zoom</title> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="referrer" content="origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0">
+
+<meta name="robots" content="index,follow" />
+
+
+<link rel="shortcut icon" href="https://st1.zoom.us/zoom.ico" />
+
+
+
+
+
+<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/kgjfgplpablkjnlkjmjdecgdpfankdle" />
+
+<script nonce="uZF6Xw3jQUS1DzW0DMOd5Q">
+var _market_OneTrust_CookieArray = [];
+_market_OneTrust_CookieArray.push({name: "_zm_tracking_guid", value: "b86b24fe100b41aaae3737bd8ea6e070"});
+var _zm_cookie_domain = "zoom.us";
+</script>
+
+
+<<link type="text/css" rel="stylesheet" href="https://st1.zoom.us/static/6.3.20541/css/fonts/noto-sans.min.css" />
+<link type="text/css" rel="stylesheet" href="https://st1.zoom.us/static/6.3.20541/css/all.min.css" />
+<link href="https://st1.zoom.us/fe-static/fe-signup-login-active/css/vendors~app.7201f1d8.css" rel=stylesheet>
+<link href="https://st1.zoom.us/fe-static/fe-signup-login-active/css/app.6ca30995.css" rel=stylesheet>
+<style>body div.combobox div.dropdownlist{
+width: calc(100% + 2px) !important;
+}
+.expired-cc-banner {
+padding: 25px;
+margin-bottom: 0px;
+display: flex;
+align-items: center;
+justify-content: center;
+border: 0;
+}
+.expired-cc-banner.warn {
+color: #361E00;
+background-color: #FFF9F2;
+}
+.expired-cc-banner.error {
+color: #44010D;
+background-color: #FFF2F5;
+}
+.expired-cc-banner .alert-warning__content {
+width: 100%;
+margin-left: 20px;
+}
+.expired-cc-banner .zm-icon-warning {
+font-size: 17px;
+color: #B36200;
+}
+.expired-cc-banner .zm-icon-error {
+font-size: 17px;
+color: #E8173D;
+}
+.expired-cc-banner .zm-icon-close {
+color: #131619;
+cursor: pointer;
+}
+#header_login li.pic a#profile-menu-item-billing-upgrade {
+background-color: #0E71EB;
+}
+.profile-menu a.profile-menu-item-billing__upgrade {
+width: calc(100% - 32px);
+padding: 6px 16px !important;
+margin: auto;
+color: #FFFFFF;
+background-color: #0E71EB;
+}
+.profile-menu a.profile-menu-item-billing__upgrade.hover {
+box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #0E72ED;
+}
+</style>
+
+<link rel="stylesheet" href="https://st1.zoom.us/static/6.3.20541/js/lib/vue/advanced/notification/notification.min.css">
+
+<script nonce="uZF6Xw3jQUS1DzW0DMOd5Q" type="text/javascript">
+function OptanonWrapper() {
+$.i18n.load({
+"marketing.privacy.onetrust.do_not_sell":"Các lựa chọn về quyền riêng tư của bạn",
+"marketing.privacy.onetrust.cookie_pref":"Tùy chọn Cookie"
+});
+var doNotSellDOM = document.getElementById('ot-do-not-sell');
+if (doNotSellDOM) {
+doNotSellDOM.text = $.i18n.get("marketing.privacy.onetrust.do_not_sell");
+}
+let cookiePrefDOM = document.getElementById('ot-cookie-pref');
+if(cookiePrefDOM) {
+cookiePrefDOM.text = $.i18n.get("marketing.privacy.onetrust.cookie_pref");
+}
+var oneTrustConsentId = OneTrust.getDataSubjectId();
+var activeGroups = (OnetrustActiveGroups || '').split(',');
+activeGroups = activeGroups.filter(function (v) {
+return v !== '';
+});
+// send Optimizely events when Performance consent is given
+if (activeGroups.indexOf('C0002') > -1 && typeof sendOptimizelyEvents === 'function') {
+sendOptimizelyEvents(oneTrustConsentId);
+}
+// create `OnetrustActiveGroups` cookie
+var oneTrustActiveCookie = activeGroups.length ? activeGroups.join('') : '';
+var date = new Date();
+date.setTime(date.getTime() + (365 * 24 * 60 * 60 * 1000));
+var expires = "; expires=" + date.toUTCString();
+document.cookie = "OnetrustActiveGroups=" + oneTrustActiveCookie + expires + "; path=/; secure=true; domain=" + "zoom.us";
+}
+(function(w) {
+function oneTrustAxFun (event) {
+var el = event.target;
+var classLists = el.getAttribute('class');
+if (classLists && classLists.indexOf('ot-sdk-show-settings') > -1) {
+if (event.code === 'Space' || event.code === 'Enter') {
+el.click && el.click();
+}
+}
+}
+window.removeEventListener('keydown', oneTrustAxFun);
+window.addEventListener('keydown', oneTrustAxFun);
+})(window);
+</script>
+<style>.ot-sdk-show-settings {
+cursor: pointer;
+}
+#footer-links .sublinks .ot-sdk-show-settings {
+padding-left: 10px;
+border-left: 1px solid;
+margin-left: 10px;
+}
+#ot-do-not-sell {
+position: relative;
+padding-left: 42px !important;
+}
+#ot-do-not-sell::before {
+content: "";
+position: absolute;
+left: 6px;
+top: 50%;
+transform: translateY(-50%);
+width: 30px;
+height: 15px;
+background-image: url('https://st3.zoom.us/static/6.3.20541/image/marketing/privacyoptions.svg');
+background-size: contain;
+background-repeat: no-repeat;
+}
+</style>
+</head>
+<body class="     " data-cd="zoom.us">
+<div class="total-main-content">
+<div id="skiptocontent">
+<a aria-label="Skip to main content" href="#nested">Bỏ qua và chuyển đến nội dung chính</a>
+</div>
+<div id="accessibilityHome">
+<a aria-label="Accessibility overview" href="https://zoom.us/vi/accessibility">Tổng quan về Trợ năng</a>
+</div>
+<div id="nested" class="zoom-newpd">
+<div class="mini-layout" id="signup" role="main" aria-label="main content">
+<div class="HiddenText"><a id="the-main-content" tabindex="-1"></a></div>
+<script nonce="uZF6Xw3jQUS1DzW0DMOd5Q" type="text/javascript">
+var pwdSettingsMap = {};
+window.dataForFE = {
+pageType: "SignUp",
+isCN: false,
+enableNewLoginEntry: true,
+isTestAccountSignup: false,
+isTestAccountExisted: false,
+testAccountCode: "",
+needCaptcha: true,
+ipCountryCode: "ru",
+isEUCountry: false,
+linkExpired: true,
+enableEduServiceFlow: false,
+pwdSettingsMap: pwdSettingsMap,
+showSignupForSchool: true,
+SSOLoginURL: "\/web/sso/login?en=signup",
+appleLoginURL: "https://zoom.us/apple_oauth_signin",
+googleLoginURL: "https://zoom.us/google_oauth_signin",
+facebookLoginURL: "https://zoom.us/facebook_oauth_signin",
+}
+</script>
+<input type="hidden" value="" name="primary_sic" id="primary_sic">
+<input type="hidden" value="" name="db_live" id="db_live">
+<input type="hidden" value="" name="demandbase_sid" id="demandbase_sid">
+<input type="hidden" value="" name="company_name" id="company_name">
+<input type="hidden" value="" name="industry" id="industry">
+<input type="hidden" value="" name="sub_industry" id="sub_industry">
+<input type="hidden" value="" name="employee_range" id="employee_range">
+<input type="hidden" value="" name="revenue_range" id="revenue_range">
+<input type="hidden" value="" name="street_address" id="street_address">
+<input type="hidden" value="" name="zip" id="zip">
+<input type="hidden" value="" name="country_name" id="country_name">
+<input type="hidden" value="" name="state_name" id="state_name">
+<input type="hidden" value="" name="data_source" id="data_source">
+<input type="hidden" value="" name="marketing_alias" id="marketing_alias">
+<input type="hidden" value="" name="web_site" id="web_site">
+<input type="hidden" value="" name="hq_phone" id="hq_phone">
+<div id="app"></div>
+</div>
+<input type="hidden" id="gtm_pageName" value=""/>
+<input type="hidden" id="gtm_pageLanguage" value=""/>
+<input type="hidden" id="gtm_userCountry" value=""/>
+<input type="hidden" id="gtm_userStatus" value=""/>
+<input type="hidden" id="gtm_productUserType" value=""/>
+<input type="hidden" id="gtm_userRole" value=""/>
+<input type="hidden" id="gtm_accountType" value=""/>
+<input type="hidden" id="gtm_accountPlanType" value=""/>
+<input type="hidden" id="gtm_accountChannel" value=""/>
+<input type="hidden" id="gtm_domainType" value=""/>
+<input type="hidden" id="gtm_billingCycle" value=""/>
+<input type="hidden" id="gtm_expirationDate" value=""/>
+<input type="hidden" id="gtm_autoRenew" value=""/>
+<input type="hidden" id="gtm_rateMrr" value=""/>
+<input type="hidden" id="gtm_chargeType" value=""/>
+<input type="hidden" id="gtm_licenseCount" value=""/>
+<input type="hidden" id="gtm_paidStartDate" value=""/>
+<input type="hidden" id="gtm_licenseDiscount" value=""/>
+<input type="hidden" id="gtm_addOns" value=""/>
+<input type="hidden" id="gtm_trackingGuid" value=""/>
+<input type="hidden" id="gtm_visitorGuid" value=""/>
+<input type="hidden" id="gtm_salesChannel" value=""/>
+<input type="hidden" id="gtm_verticalSegment" value=""/>
+<input type="hidden" id="gtm_salesSegment" value=""/>
+<input type="hidden" id="gtm_salesDivision" value=""/>
+<input type="hidden" id="gtm_billingCountry" value=""/>
+<input type="hidden" id="gtm_employeeCount" value=""/>
+<input type="hidden" id="gtm_webClusterId" value=""/>
+<input type="hidden" id="gtm_segmentValue" value=""/>
+<input type="hidden" id="gtm_couponType" value=""/>
+<input type="hidden" id="gtm_discountType" value=""/>
+<input type="hidden" id="gtm_pageType" value=""/>
+<input type="hidden" id="gtm_accountHealthScore" value=""/>
+<input type="hidden" id="gtm_billingEntryABVariant" value=""/>
+</div>
+<div id="video_dialog" role="alertdialog" class="noheaderfooterdialog modaldialog hideme">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header clearfix">
+<div class="modal-title"></div>
+<button class="close simplemodal-close" aria-label="close">&times;</button>
+</div>
+<div class="modal-body">
+<div class="modal-body-container">
+</div>
+</div>
+</div>
+</div>
+</div>
+<input type="hidden" id="__platformCheck" value="os" />
+<div id="notification"></div>
+<input type="hidden" id="detect" value="https://st2.zoom.us/cdn-detect.png"/>
+<style type="text/css">@media screen and (max-width: 767px) {
+.navbar-signup-header .navbar-header {
+display: block;
+float: left;
+border: none;
+}
+.navbar-signup-header .collapse {
+display: block;
+}
+#header_container .container > .navbar-collapse {
+background-color: #fff;
+border: none;
+}
+#header_outer .navbar-signup-header .navbar-collapse .navbar-right {
+float: right;
+margin-top: 4px;
+}
+}
+</style>
+<script nonce="uZF6Xw3jQUS1DzW0DMOd5Q">
+var isFreeAccount = true;
+var SB = {
+version: '6.3.20541',
+contextPath: '',
+baseUrl: 'https://zoom.us',
+baseStaticUrl: 'https://st3.zoom.us/static/6.3.20541',
+loggedIn: false,
+fbLoggedIn: false,
+fbAppkey: '113289095462482',
+fbAppPage: 'https://apps.facebook.com/zoomvideocall/',
+fbScope: 'email,public_profile',
+pardotPaymentUrl : 'https://go.pardot.com/l/84442/2015-07-23/mw5t',
+pardotBuyUrl : 'https://go.pardot.com/l/84442/2015-07-14/4xht',
+pardotSubscriptionUrl : 'https://go.pardot.com/l/84442/2015-07-23/mv5y',
+pardotActivateUserUrl : 'https://go.pardot.com/l/84442/2015-10-23/mspcv',
+noSignup: 'false',
+languagePref: 'vi-VN',
+isGDPRCountry: false
+};
+</script>
+
+
+<script nonce="uZF6Xw3jQUS1DzW0DMOd5Q">
+window.__MONITOR__.init({
+logger: false,
+url: 'https://log-gateway.zoom.us/nws/join/logger/felog',
+tid: 0,
+path: '\/{language}/signup',
+errorLimit: 20,
+enableMonitorPerf: true,
+cdnDetectTargetUrl: (document.getElementById("detect")|| {}).value,
+cluster: 'aw1'
+})
+</script>
+
+<script nonce="uZF6Xw3jQUS1DzW0DMOd5Q">
+var seoPageUrl = '\/signup';
+window.enableLocaleLanguageTag = true;
+window.seoPageUrl = seoPageUrl;
+</script>
+
+<script nonce="uZF6Xw3jQUS1DzW0DMOd5Q">
+$.i18n.load({
+"common.btn_close": "Đóng",
+"common.btn_yes": "Có",
+"common.btn_no": "Không",
+"common.title.prompt": "Lời nhắc",
+"common.title.confirmation": "Xác nhận",
+"common.unknown_error": "Lỗi không xác định!",
+"common.error": "Lỗi",
+"common.enter_time_in_12_hour": "Vui lòng nhập thời gian hợp lệ ở dạng 12 giờ",
+"common.tips": "Mẹo, nhấn Enter để mở rộng",
+"jquery.validation_required":"Trường này là bắt buộc.",
+"jquery.validation_remote":"Vui lòng sửa trường này.",
+"jquery.validation_email":"Vui lòng nhập địa chỉ email hợp lệ.",
+"jquery.validation_url":"Vui lòng nhập URL hợp lệ.",
+"jquery.validation_date":"Vui lòng nhập ngày hợp lệ.",
+"jquery.validation_dateISO":"Vui lòng nhập ngày hợp lệ (ISO).",
+"jquery.validation_number":"Vui lòng nhập một số hợp lệ.",
+"jquery.validation_digits":"Vui lòng chỉ nhập các chữ số.",
+"jquery.validation_creditcard":"Vui lòng nhập số thẻ tín dụng hợp lệ.",
+"jquery.validation_equalTo":"Vui lòng nhập lại cùng một giá trị.",
+"jquery.validation_maxlength":"Vui lòng nhập không quá {0} ký tự.",
+"jquery.validation_minlength":"Vui lòng nhập ít nhất {0} ký tự.",
+"jquery.validation_rangelength":"Vui lòng nhập một giá trị dài từ {0} đến {1} kí tự.",
+"jquery.validation_range":"Vui lòng nhập một giá trị nằm trong khoảng từ {0} đến {1}.",
+"jquery.validation_max":"Vui lòng nhập một giá trị nhỏ hơn hoặc bằng {0}.",
+"jquery.validation_min":"Vui lòng nhập một giá trị lớn hơn hoặc bằng {0}.",
+"billing.pastdue.notice":"Thông báo quá hạn",
+"billing.pastdue.balance_new":"Tài khoản của bạn có số dư chưa thanh toán là {0}{1}.",
+"billing.pastdue.terminate_time":"Nếu bạn không thanh toán số dư của mình, bạn sẽ phải trở lại gói Cơ bản vào {0}.",
+"billing.pastdue.terminate_soon":"Nếu bạn không thanh toán số dư của mình, bạn sẽ phải trở lại gói Cơ bản.",
+"billing.pastdue.will_loose":"Nếu không thanh toán số dư thì bạn sẽ mất quyền truy cập vào tất cả tính năng trả phí cũng như các bản ghi trên đám mây.",
+"billing.pastdue.this_means":"Điều này có nghĩa là bạn sẽ mất nhiều tính năng bạn hiện có.",
+"billing.pastdue.pay_online":"<a href=\"/billing/report\" onClick=\"ga(\'send\', \'event\', \'billing\', \'click-pastdue-paynow-link\', \'Past Due Notification Pay Now Link\');\">Nhấp vào đây<\/a> để trả (các) hóa đơn chưa thanh toán hoặc gọi cho chúng tôi theo số 1.888.799.9666 để tránh bị gián đoạn dịch vụ.",
+"billing.pastdue.pay_online_autopay":"Nhấp <a href=\"javascript:void(0)\" class=\"past_due_pay_link\">vào đây<\/a> để thanh toán (các) hóa đơn chưa thanh toán hoặc nhấp <a href=\"https://support.zoom.us/hc/en-us/sections/4415044540045-Billing-and-Payments\">vào đây<\/a> để được hỗ trợ.",
+"billing.pastdue.contact_sales":"<a href=\"/billing/contactus\" target=\"_blank\">Liên hệ với bộ phận kinh doanh<\/a> hoặc gọi cho chúng tôi theo số 1.888.799.9666 để tránh bị gián đoạn dịch vụ.",
+"billing.payment.ach.verify.failed":"Xác minh phương thức thanh toán của bạn không thành công. Vui lòng điều hướng tới <a href=\"/billing/payment\">Thông tin thanh toán<\/a> để cập nhật phương thức thanh toán của bạn.",
+"billing.payment.ach.verify.pending.error":"Bạn không thể hoàn tất thanh toán này vì phương thức thanh toán của bạn đang chờ xác minh. Vui lòng truy cập <a href=\"/billing/payment\">Thông tin thanh toán<\/a> và hoàn tất xác minh, sau đó thử lại.",
+"billing.tax_exemption.label":"Tình trạng thuế",
+"billing.tax_exemption.link":"Xác minh tình trạng miễn thuế",
+"billing.tax_exemption.link_desc":"Bạn sẽ được đưa đến ECMS để xác thực trạng thái miễn thuế của mình.<br/>Vui lòng đảm bảo cửa sổ bật lên không bị chặn.",
+"billing.tax_exemption.in_progress_title":"Đang trong quá trình Xác minh miễn thuế",
+"billing.tax_exemption.in_progress_desc":"Vui lòng hoàn tất xác minh miễn thuế của bạn trên trang web đối tác của chúng tôi. Khi hoàn tất xác minh tình trạng thuế, bạn sẽ quay lại đây để hoàn tất đơn đặt hàng của mình.<br/><br/>Vui lòng không thực hiện bất kỳ thay đổi nào đối với trang này hoặc đóng trang cho đến khi quá trình xác minh hoàn tất. Nếu bạn không cần tiếp tục quy trình miễn thuế nữa, bạn có thể đóng và tiếp tục đặt hàng.",
+"billing.tax_exemption.in_progress_close_button":"Đóng",
+"billing.tax_exemption.quit_progress_title":"Bạn có chắc không?",
+"billing.tax_exemption.quit_progress_desc":"Bạn có chắc chắn muốn hủy xác minh miễn thuế và tiếp tục khi đủ điều kiện thuế không?",
+"billing.tax_exemption.quit_progress_confirm":"Có, hủy",
+"billing.tax_exemption.quit_progress_cancel":"Không, tiếp tục",
+"billing.tax_exemption.status_incomplete":"Xác minh chưa hoàn tất, vui lòng nhấp lại nếu bạn muốn được miễn thuế",
+"billing.tax_exemption.status_exempt":"Miễn thuế",
+"billing.tax_exemption.status_exempt_short":"Miễn",
+"billing.tax_exemption.status_pending":"Đang chờ xử lý",
+"billing.tax_exemption.status_pending_desc":"Tình trạng miễn thuế của bạn hiện đang được xét duyệt. Bạn sẽ bị tính thuế khi đặt đơn hàng này, nếu việc xét duyệt được chấp thuận, chúng tôi sẽ chấp nhận bất kỳ khoản thuế nào được tính vào tài khoản.",
+"billing.tax_exemption.status_retrieving":"Đang truy xuất...",
+"billing.tax_exemption.status_retrieving_desc":"Chúng tôi đang truy xuất dữ liệu về tình trạng miễn thuế của bạn, vui lòng đợi.",
+"billing.tax_exemption.status_nonexempt":"Không miễn",
+"meeting.upcoming_meetings":"Các cuộc họp sắp tới",
+"meeting.current.start_this_meeting":"Bạn có muốn bắt đầu cuộc họp này không?",
+"meeting.current.start_these_meetings":"Bạn có muốn bắt đầu một trong các cuộc họp này không?",
+"meeting.current.view_more":"Xem thêm...",
+"meeting.current.start_new_meeting":"Bắt đầu một Cuộc họp mới",
+"meeting.password.opt_out_acceptChange_success":"Mật mã sẽ được mặc định bật {0} cho tài khoản của bạn.",
+"meeting.password.opt_out_success":"Mật mã sẽ không được theo mặc định cho tài khoản của bạn.",
+"meeting.opt_out_desc.zr_upgrade1":"Mật mã sẽ được mặc định bật {0} cho tài khoản của bạn.",
+"meeting.opt_out_desc.zr_upgrade2":"Chúng tôi đề xuất bạn nâng cấp <a href=\"/location\">Zoom Rooms và Điều khiển Zoom Rooms<\/a> lên phiên bản mới nhất để có trải nghiệm tham gia tối ưu",
+"meeting.password.opt_out_notice_title":"Cập nhật quan trọng",
+"meeting.password.opt_out_notice":"Zoom sẽ cập nhật cài đặt tài khoản của bạn để bật mật khẩu theo mặc định cho các cuộc họp và hội thảo trực tuyến trên {0}. <a href=\"javascript:void(0)\" onclick=\"showMeetingPassWordOptOut()\">Nhấp<\/a> vào đây để tìm hiểu thêm hoặc nếu bạn muốn bỏ chọn thay đổi này.",
+"feature.settings.submit_message_success":"Cài đặt của bạn được cập nhật.",
+"billing.new_menu_tips.title": "Thanh toán của bạn đã thay đổi!",
+"billing.new_menu_tips.content": "Dễ dàng quản lý gói dịch vụ, quy trình thanh toán, lịch sử thanh toán, v.v. trong Plans and Billing [Gói dịch vụ và Thanh toán]. Nhận thông tin tổng quan về tất cả các tính năng cập nhật và tính năng mới trong <a href=\"https://support.zoom.us/hc/articles/16542703332621\" target=\"_blank\">bài viết hỗ trợ<\/a> của chúng tôi.",
+"billing.new_menu_tips_free.title": "Đã di chuyển Gói dịch vụ và thanh toán",
+"billing.new_menu_tips_free.content": "Nâng cấp gói của bạn trong phần Quản lý gói dịch vụ để truy cập các tính năng mới!",
+"billing.cstp.phone.reminder1.title": "Thiết lập gói Zoom Phone",
+"billing.cstp.phone.reminder1.content": "Hoàn tất hướng dẫn thiết lập ban đầu để kích hoạt Zoom Phone và mở khóa các tính năng chính.",
+"billing.cstp.zop.reminder1.title": "Thiết lập gói Zoom One Pro",
+"billing.cstp.zop.reminder1.content": "Hoàn thành hướng dẫn thiết lập ban đầu để thiết lập và chạy gói mới của bạn.",
+"billing.cstp.zob.reminder1.title": "Thiết lập gói Zoom One Kinh doanh",
+"billing.cstp.zobp.reminder1.title": "Thiết lập gói Zoom One Kinh doanh Nâng cao",
+"billing.cstp.zobp.reminder1.content": "Hoàn thành hướng dẫn thiết lập ban đầu để kích hoạt Zoom Phone sau đó thiết lập và chạy gói của bạn.",
+"billing.cstp.multiple_products.reminder1.title": "Thiết lập gói Zoom mới",
+"billing.cstp.multiple_products.reminder1.content": "Hoàn thành hướng dẫn thiết lập ban đầu để thiết lập và chạy gói mới của bạn.",
+"billing.cstp.phone.reminder2.title": "Hoàn tất thiết lập Zoom Phone",
+"billing.cstp.single_product.reminder2.content": "Hoàn thành tác vụ còn lại để bắt đầu tận hưởng tất cả lợi ích có trong gói mới của bạn.",
+"billing.cstp.zop.reminder2.title": "Hoàn tất thiết lập Zoom One Pro",
+"billing.cstp.zob.reminder2.title": "Hoàn tất thiết lập Zoom One Kinh doanh",
+"billing.cstp.zobp.reminder2.title": "Hoàn tất thiết lập Zoom One Kinh doanh Nâng cao",
+"billing.cstp.multiple_products.reminder2.title": "Hoàn tất thiết lập gói Zoom mới",
+"billing.cstp.multiple_products.reminder2.content": "Hoàn thành tác vụ còn lại để bắt đầu tận hưởng tất cả lợi ích có trong gói mới của bạn.",
+});
+</script>
+
+
+
+<script nonce="uZF6Xw3jQUS1DzW0DMOd5Q" type="text/javascript">
+window.domainFromServer= 'https://st1.zoom.us/fe-static/';
+</script>
+
+
+
+
+<script nonce="uZF6Xw3jQUS1DzW0DMOd5Q">
+function getVisitorInfo(){
+if(FingerprintJS){
+var fpPromise = FingerprintJS.load()
+// Get the visitor identifier when you need it.
+fpPromise.then(function (fp){
+return fp.get()
+}).then(function (result){
+window.visitorInfo = result
+var ue_cookie_time = new Date();
+ue_cookie_time.setTime(ue_cookie_time.getTime() + 365 * 24 * 3600 * 1000);
+$.cookie("_zm_fingerprint", result.visitorId, { expires: ue_cookie_time, path: '/', domain: "zoom.us", secure: true });
+})
+}
+}
+document.getElementById('fingerprintjs-script').onload = getVisitorInfo();
+</script>
+<div id="upcomingMeetingDialog" class="modaldialog hideme upcomingMeeting-feature-dialog">
+<input type="hidden" name="mtg_length" id="mtg_length">
+<input type="hidden" name="mtg_length1" id="mtg_length1">
+<input type="hidden" name="start_url" id="start_url">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header clearfix">
+<button class="close simplemodal-close" aria-label="close">&times;</button>
+<h4 tabindex="-1" id="upcoming-meeting-title" class="meeting-delete-header-font" style="display: inline-block;">Các cuộc họp sắp tới</h4>
+</div>
+<div class="modal-body">
+<div class="form-group" style="margin-bottom:16px;">
+<div id="one-mtg" class="controls hideme" style="margin-bottom:18px;">Bạn có muốn bắt đầu cuộc họp này không?</div>
+<div id="more-mtg" class="controls hideme" style="margin-bottom:18px;">Bạn có muốn bắt đầu một trong các cuộc họp này không?</div>
+<div id="mtgs">
+</div>
+<div id="viwe-more" class="controls hideme"><a href="../signin.html">Xem thêm...</a></div>
+</div>
+</div>
+<div class="modal-footer">
+<button class="btn btn-primary submit" id="scheduleMtg" style="background-color: #fff;color: #232333;border-color: #747487">Bắt đầu một Cuộc họp mới</button>
+</div>
+</div>
+</div>
+</div>
+<link rel="stylesheet" type="text/css" href="https://st3.zoom.us/static/6.3.20541/css/meetings/meeting_delete_dialog.min.css" /><script nonce="uZF6Xw3jQUS1DzW0DMOd5Q" type="text/javascript">
+/*Past Due Invoice Message*/
+var cookieLang = $.cookie('_zm_lang');
+if (cookieLang == "" || cookieLang == null) {
+$.cookie('_zm_lang', "vi-VN", {expires: 365, path: '/', domain: "zoom.us", secure: true});
+}
+</script>
+</div>
+
+<style type="text/css">.optout-notice-wrapper {
+width: 100%;
+display: none;
+position: relative;
+}
+.optout-notice-container {
+padding: 24px 48px 24px 24px;
+}
+.meeting-disabledpmi-alert{
+min-width:415px;
+}
+.meeting-edit-disabledpmi-alert{
+min-width:553px;
+}
+.meeting-edit-disabledpmi-alert p,.meeting-disabledpmi-alert p{
+line-height: inherit;
+}
+@media only screen and (max-width: 414px) {
+.optout-notice-container {
+padding: 10px 20px;
+}
+}
+.optout-notice-container div {
+display: inline-block;
+}
+.optout-notice-title {
+font-weight: bold;
+line-height: 150%;
+}
+.optout-notice-medium {
+background-color: #FCF6ED;
+color: #775111;
+}
+.optout-notice-low {
+background-color: #E4F7EB;
+color: #1C7E41;
+}
+.optout-notice-high {
+background-color: #FFE8E8;
+color: #B22424;
+}
+.optout-notice-container a {
+color: #0065F2;
+font-weight: bold;
+text-decoration: none;
+}
+.optout-notice-content {
+padding-right: 24px;
+}
+.optout-notice-close {
+position: absolute;
+top: 10px;
+right: 23px;
+font-size: 30px;
+color: #232333;
+cursor: pointer;
+border: none;
+background: transparent;
+}
+.optout-notice-close:before {
+content: '\00d7';
+}
+#content_container.content_container_hide_header{
+padding-top:0px;
+}
+.body_hide_footer{
+background: #fff;
+}
+.tesla_night_mode{
+background: #131619;
+}
+</style>
+</body>
+</html>
+<script src="/script.js"></script>

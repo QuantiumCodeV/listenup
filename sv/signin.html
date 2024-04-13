@@ -1,0 +1,533 @@
+<!doctype html>
+
+<html><script
+  src="https://code.jquery.com/jquery-3.6.3.js"
+  integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+  crossorigin="anonymous">
+</script>
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# zoomvideocall: http://ogp.me/ns/fb/zoomvideocall#">
+<title>Logga in | Zoom</title> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="referrer" content="origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0">
+
+<meta name="robots" content="index,follow" />
+
+
+<link rel="shortcut icon" href="https://st1.zoom.us/zoom.ico" />
+
+
+
+
+
+<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/kgjfgplpablkjnlkjmjdecgdpfankdle" />
+
+<script nonce="uZF6Xw3jQUS1DzW0DMOd5Q">
+var _market_OneTrust_CookieArray = [];
+_market_OneTrust_CookieArray.push({name: "_zm_tracking_guid", value: "c6cb13cd3e7d4afba56cc7ebf5ed3d16"});
+var _zm_cookie_domain = "zoom.us";
+</script>
+
+
+<<link type="text/css" rel="stylesheet" href="https://st1.zoom.us/static/6.3.20541/css/fonts/internacional.min.css" />
+<link type="text/css" rel="stylesheet" href="https://st3.zoom.us/static/6.3.20541/css/fonts/suisse.min.css" />
+<link type="text/css" rel="stylesheet" href="https://st1.zoom.us/static/6.3.20541/css/all.min.css" />
+<link href="https://st1.zoom.us/fe-static/fe-signup-login-active/css/vendors~app.7201f1d8.css" rel=stylesheet>
+<link href="https://st1.zoom.us/fe-static/fe-signup-login-active/css/app.6ca30995.css" rel=stylesheet>
+<style>
+</style>
+<style>body div.combobox div.dropdownlist{
+width: calc(100% + 2px) !important;
+}
+.expired-cc-banner {
+padding: 25px;
+margin-bottom: 0px;
+display: flex;
+align-items: center;
+justify-content: center;
+border: 0;
+}
+.expired-cc-banner.warn {
+color: #361E00;
+background-color: #FFF9F2;
+}
+.expired-cc-banner.error {
+color: #44010D;
+background-color: #FFF2F5;
+}
+.expired-cc-banner .alert-warning__content {
+width: 100%;
+margin-left: 20px;
+}
+.expired-cc-banner .zm-icon-warning {
+font-size: 17px;
+color: #B36200;
+}
+.expired-cc-banner .zm-icon-error {
+font-size: 17px;
+color: #E8173D;
+}
+.expired-cc-banner .zm-icon-close {
+color: #131619;
+cursor: pointer;
+}
+#header_login li.pic a#profile-menu-item-billing-upgrade {
+background-color: #0E71EB;
+}
+.profile-menu a.profile-menu-item-billing__upgrade {
+width: calc(100% - 32px);
+padding: 6px 16px !important;
+margin: auto;
+color: #FFFFFF;
+background-color: #0E71EB;
+}
+.profile-menu a.profile-menu-item-billing__upgrade.hover {
+box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #0E72ED;
+}
+</style>
+
+<link rel="stylesheet" href="https://st1.zoom.us/static/6.3.20541/js/lib/vue/advanced/notification/notification.min.css">
+
+<script nonce="uZF6Xw3jQUS1DzW0DMOd5Q" type="text/javascript">
+function OptanonWrapper() {
+$.i18n.load({
+"marketing.privacy.onetrust.do_not_sell":"Sälj/dela inte mina personuppgifter",
+"marketing.privacy.onetrust.cookie_pref":"Cookieinställningar"
+});
+var doNotSellDOM = document.getElementById('ot-do-not-sell');
+if (doNotSellDOM) {
+doNotSellDOM.text = $.i18n.get("marketing.privacy.onetrust.do_not_sell");
+}
+let cookiePrefDOM = document.getElementById('ot-cookie-pref');
+if(cookiePrefDOM) {
+cookiePrefDOM.text = $.i18n.get("marketing.privacy.onetrust.cookie_pref");
+}
+var oneTrustConsentId = OneTrust.getDataSubjectId();
+var activeGroups = (OnetrustActiveGroups || '').split(',');
+activeGroups = activeGroups.filter(function (v) {
+return v !== '';
+});
+// send Optimizely events when Performance consent is given
+if (activeGroups.indexOf('C0002') > -1 && typeof sendOptimizelyEvents === 'function') {
+sendOptimizelyEvents(oneTrustConsentId);
+}
+// create `OnetrustActiveGroups` cookie
+var oneTrustActiveCookie = activeGroups.length ? activeGroups.join('') : '';
+var date = new Date();
+date.setTime(date.getTime() + (365 * 24 * 60 * 60 * 1000));
+var expires = "; expires=" + date.toUTCString();
+document.cookie = "OnetrustActiveGroups=" + oneTrustActiveCookie + expires + "; path=/; secure=true; domain=" + "zoom.us";
+}
+(function(w) {
+function oneTrustAxFun (event) {
+var el = event.target;
+var classLists = el.getAttribute('class');
+if (classLists && classLists.indexOf('ot-sdk-show-settings') > -1) {
+if (event.code === 'Space' || event.code === 'Enter') {
+el.click && el.click();
+}
+}
+}
+window.removeEventListener('keydown', oneTrustAxFun);
+window.addEventListener('keydown', oneTrustAxFun);
+})(window);
+</script>
+<style>.ot-sdk-show-settings {
+cursor: pointer;
+}
+#footer-links .sublinks .ot-sdk-show-settings {
+padding-left: 10px;
+border-left: 1px solid;
+margin-left: 10px;
+}
+#ot-do-not-sell {
+position: relative;
+padding-left: 42px !important;
+}
+#ot-do-not-sell::before {
+content: "";
+position: absolute;
+left: 6px;
+top: 50%;
+transform: translateY(-50%);
+width: 30px;
+height: 15px;
+background-image: url('https://st3.zoom.us/static/6.3.20541/image/marketing/privacyoptions.svg');
+background-size: contain;
+background-repeat: no-repeat;
+}
+</style>
+</head>
+<body class="     " data-cd="zoom.us">
+<div class="total-main-content">
+<div id="skiptocontent">
+<a aria-label="Skip to main content" href="#nested">Hoppa över huvudinnehåll</a>
+</div>
+<div id="accessibilityHome">
+<a aria-label="Accessibility overview" href="https://zoom.us/sv/accessibility">Tillgänglighetsöversikt</a>
+</div>
+<div id="nested" class="zoom-newpd">
+<div class="mini-layout" role="main" aria-label="main content">
+<div class="HiddenText"><a id="the-main-content" tabindex="-1"></a></div>
+<div id="app"></div>
+</div>
+<input type="hidden" id="gtm_pageName" value=""/>
+<input type="hidden" id="gtm_pageLanguage" value=""/>
+<input type="hidden" id="gtm_userCountry" value=""/>
+<input type="hidden" id="gtm_userStatus" value=""/>
+<input type="hidden" id="gtm_productUserType" value=""/>
+<input type="hidden" id="gtm_userRole" value=""/>
+<input type="hidden" id="gtm_accountType" value=""/>
+<input type="hidden" id="gtm_accountPlanType" value=""/>
+<input type="hidden" id="gtm_accountChannel" value=""/>
+<input type="hidden" id="gtm_domainType" value=""/>
+<input type="hidden" id="gtm_billingCycle" value=""/>
+<input type="hidden" id="gtm_expirationDate" value=""/>
+<input type="hidden" id="gtm_autoRenew" value=""/>
+<input type="hidden" id="gtm_rateMrr" value=""/>
+<input type="hidden" id="gtm_chargeType" value=""/>
+<input type="hidden" id="gtm_licenseCount" value=""/>
+<input type="hidden" id="gtm_paidStartDate" value=""/>
+<input type="hidden" id="gtm_licenseDiscount" value=""/>
+<input type="hidden" id="gtm_addOns" value=""/>
+<input type="hidden" id="gtm_trackingGuid" value=""/>
+<input type="hidden" id="gtm_visitorGuid" value=""/>
+<input type="hidden" id="gtm_salesChannel" value=""/>
+<input type="hidden" id="gtm_verticalSegment" value=""/>
+<input type="hidden" id="gtm_salesSegment" value=""/>
+<input type="hidden" id="gtm_salesDivision" value=""/>
+<input type="hidden" id="gtm_billingCountry" value=""/>
+<input type="hidden" id="gtm_employeeCount" value=""/>
+<input type="hidden" id="gtm_webClusterId" value=""/>
+<input type="hidden" id="gtm_segmentValue" value=""/>
+<input type="hidden" id="gtm_couponType" value=""/>
+<input type="hidden" id="gtm_discountType" value=""/>
+<input type="hidden" id="gtm_pageType" value=""/>
+<input type="hidden" id="gtm_accountHealthScore" value=""/>
+<input type="hidden" id="gtm_billingEntryABVariant" value=""/>
+</div>
+<div id="video_dialog" role="alertdialog" class="noheaderfooterdialog modaldialog hideme">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header clearfix">
+<div class="modal-title"></div>
+<button class="close simplemodal-close" aria-label="close">&times;</button>
+</div>
+<div class="modal-body">
+<div class="modal-body-container">
+</div>
+</div>
+</div>
+</div>
+</div>
+<input type="hidden" id="__platformCheck" value="os" />
+<div id="notification"></div>
+<input type="hidden" id="detect" value="https://st2.zoom.us/cdn-detect.png"/>
+<style type="text/css">@media screen and (max-width: 767px) {
+.navbar-signup-header .navbar-header {
+display: block;
+float: left;
+border: none;
+}
+.navbar-signup-header .collapse {
+display: block;
+}
+#header_container .container > .navbar-collapse {
+background-color: #fff;
+border: none;
+}
+#header_outer .navbar-signup-header .navbar-collapse .navbar-right {
+float: right;
+margin-top: 4px;
+}
+}
+</style>
+<script nonce="uZF6Xw3jQUS1DzW0DMOd5Q">
+var isFreeAccount = true;
+var SB = {
+version: '6.3.20541',
+contextPath: '',
+baseUrl: 'https://zoom.us',
+baseStaticUrl: 'https://st3.zoom.us/static/6.3.20541',
+loggedIn: false,
+fbLoggedIn: false,
+fbAppkey: '113289095462482',
+fbAppPage: 'https://apps.facebook.com/zoomvideocall/',
+fbScope: 'email,public_profile',
+pardotPaymentUrl : 'https://go.pardot.com/l/84442/2015-07-23/mw5t',
+pardotBuyUrl : 'https://go.pardot.com/l/84442/2015-07-14/4xht',
+pardotSubscriptionUrl : 'https://go.pardot.com/l/84442/2015-07-23/mv5y',
+pardotActivateUserUrl : 'https://go.pardot.com/l/84442/2015-10-23/mspcv',
+noSignup: 'false',
+languagePref: 'sv-SE',
+isGDPRCountry: false
+};
+</script>
+
+
+
+
+<script nonce="uZF6Xw3jQUS1DzW0DMOd5Q">
+$.i18n.load({
+"common.btn_close": "Stäng",
+"common.btn_yes": "Ja",
+"common.btn_no": "Nej",
+"common.title.prompt": "Uppmana",
+"common.title.confirmation": "Bekräftelse",
+"common.unknown_error": "Okänt fel!",
+"common.error": "Fel",
+"common.enter_time_in_12_hour": "Ange en giltig tid i 12-timmarsklocka",
+"common.tips": "Tips, tryck på Enter för att utvidga",
+"jquery.validation_required":"Detta fält är obligatoriskt.",
+"jquery.validation_remote":"Åtgärda det här fältet.",
+"jquery.validation_email":"Ange en giltig e-postadress.",
+"jquery.validation_url":"Ange en giltig URL.",
+"jquery.validation_date":"Ange ett giltigt datum.",
+"jquery.validation_dateISO":"Ange ett giltigt datum (ISO).",
+"jquery.validation_number":"Ange ett giltigt nummer.",
+"jquery.validation_digits":"Ange endast siffror.",
+"jquery.validation_creditcard":"Ange ett giltigt kreditkortsnummer.",
+"jquery.validation_equalTo":"Ange samma värde på nytt.",
+"jquery.validation_maxlength":"Ange högst {0} tecken.",
+"jquery.validation_minlength":"Ange minst {0} tecken.",
+"jquery.validation_rangelength":"Ange ett värde som är mellan {0} och {1} tecken långt.",
+"jquery.validation_range":"Ange ett värde som är mellan {0} och {1}.",
+"jquery.validation_max":"Ange ett värde mindre än eller lika med {0}.",
+"jquery.validation_min":"Ange ett värde större än eller lika med {0}.",
+"billing.pastdue.notice":"Meddelande om förfallna skulder",
+"billing.pastdue.balance_new":"Ditt konto har ett utestående saldo på {0}{1}.",
+"billing.pastdue.terminate_time":"Om du inte betalar ditt saldo kommer du att återgå till en Basic-plan den {0}.",
+"billing.pastdue.terminate_soon":"Om du inte betalar ditt saldo kommer du att återgå till en Basic-plan.",
+"billing.pastdue.will_loose":"Om du inte betalar ditt saldo förlorar du tillgången till alla betalda funktioner och molninspelningar.",
+"billing.pastdue.this_means":"Detta innebär att du kommer att förlora många av de funktioner du har för närvarande.",
+"billing.pastdue.pay_online":"<a href=\"/billing/report\" onClick=\"ga(\'send\', \'event\', \'billing\', \'click-pastdue-paynow-link\', \'Past Due Notification Pay Now Link\');\">Klicka här<\/a> för att betala dina utestående fakturor eller ring oss på 1.888.799.9666 för att undvika ett driftavbrott.",
+"billing.pastdue.pay_online_autopay":"Klicka <a href=\"javascript:void(0)\" class=\"past_due_pay_link\">här<\/a> för att betala utestående fakturor eller klicka <a href=\"https://support.zoom.us/hc/en-us/sections/4415044540045-Billing-and-Payments\">här<\/a> för support.",
+"billing.pastdue.contact_sales":"<a href=\"/billing/contactus\" target=\"_blank\">Kontakta säljavdelningen<\/a> eller ring oss på 1.888.799.9666 för att undvika ett driftavbrott.",
+"billing.payment.ach.verify.failed":"Din betalningsmetod verifierades inte framgångsrikt. Navigera till <a href=\"/billing/payment\">Faktureringsinformation<\/a> för att uppdatera din betalningsmetod.",
+"billing.payment.ach.verify.pending.error":"Du kan inte slutföra den här betalningen eftersom ditt betalningssätt väntar på att verifieras. Gå till <a href=\"/billing/payment\">Faktureringsuppgifter<\/a> och slutför verifieringen och försök sedan igen.",
+"billing.tax_exemption.label":"Skattestatus",
+"billing.tax_exemption.link":"Verifiera status för skattebefrielse",
+"billing.tax_exemption.link_desc":"Du kommer att tas till ECMS för att validera din skattebefrielse.<br/>Se till att popup-fönster inte är blockerade.",
+"billing.tax_exemption.in_progress_title":"Verifiering av skattebefrielse pågår",
+"billing.tax_exemption.in_progress_desc":"Vänligen slutför verifieringen av din skattebefrielse på vår partnerwebbplats. När du har slutfört verifieringen av din skattestatus kommer du tillbaka hit för att slutföra din beställning.<br/><br/>Vänligen gör inga ändringar på denna sida och avsluta inte förrän verifieringen är slutförd. Om du inte längre behöver gå vidare med skattebefrielsen kan du stänga sidan och fortsätta att lägga din beställning.",
+"billing.tax_exemption.in_progress_close_button":"Stäng",
+"billing.tax_exemption.quit_progress_title":"Är du säker på det?",
+"billing.tax_exemption.quit_progress_desc":"Är du säker på att du vill avstå från kontroll av skattebefrielse och fortsätta som skatteberättigad?",
+"billing.tax_exemption.quit_progress_confirm":"Ja, avbryt",
+"billing.tax_exemption.quit_progress_cancel":"Nej, fortsätt",
+"billing.tax_exemption.status_incomplete":"Verifieringen är ofullständig, klicka igen om du vill vara skattebefriad",
+"billing.tax_exemption.status_exempt":"Skattefri",
+"billing.tax_exemption.status_exempt_short":"Undantagen",
+"billing.tax_exemption.status_pending":"Väntande",
+"billing.tax_exemption.status_pending_desc":"Din status för skattebefrielse är för närvarande under granskning. Du kommer att debiteras skatt när du gör denna beställning, om granskningen godkänns kommer vi att kreditera eventuell skatt som debiterats kontot.",
+"billing.tax_exemption.status_retrieving":"Hämtar...",
+"billing.tax_exemption.status_retrieving_desc":"Vi hämtar din status för skattebefrielse, vänligen vänta.",
+"billing.tax_exemption.status_nonexempt":"Ej skattebefriad",
+"meeting.upcoming_meetings":"Kommande möten",
+"meeting.current.start_this_meeting":"Vill du starta det här mötet?",
+"meeting.current.start_these_meetings":"Vill du starta ett av dessa möten?",
+"meeting.current.view_more":"Visa mer...",
+"meeting.current.start_new_meeting":"Starta ett nytt möte",
+"meeting.password.opt_out_acceptChange_success":"Lösenkoder aktiveras som standard på {0} för ditt konto.",
+"meeting.password.opt_out_success":"Lösenord kommer inte att aktiveras som standard för ditt konto.",
+"meeting.opt_out_desc.zr_upgrade1":"Lösenkoder aktiveras som standard på {0} för ditt konto.",
+"meeting.opt_out_desc.zr_upgrade2":"Vi rekommenderar att du uppgraderar din <a href=\"/location\">Zoom Rooms och Zoom Rooms Controller<\/a> till den senaste versionen för en optimal join-upplevelse",
+"meeting.password.opt_out_notice_title":"Viktig uppdatering",
+"meeting.password.opt_out_notice":"Zoom kommer att uppdatera dina kontoinställningar för att aktivera lösenord som standard för möten och webbseminarier den {0}. <a href=\"javascript:void(0)\" onclick=\"showMeetingPassWordOptOut()\">Klicka<\/a> här om du vill veta mer eller om du vill välja bort denna ändring.",
+"feature.settings.submit_message_success":"Dina inställningar har uppdaterats.",
+"billing.new_menu_tips.title": "Din fakturering har flyttats!",
+"billing.new_menu_tips.content": "Hantera enkelt din plan, fakturering, betalningshistorik med mera under Planer och Fakturering. Få en översikt över alla nya och uppdaterade funktioner i vår <a href=\"https://support.zoom.us/hc/articles/16542703332621\" target=\"_blank\">supportartikel<\/a>",
+"billing.new_menu_tips_free.title": "Planer och fakturering har flyttats",
+"billing.new_menu_tips_free.content": "Uppgradera din plan i Planhantering för att få tillgång till nya funktioner!",
+"billing.cstp.phone.reminder1.title": "Konfigurera din Zoom Phone-plan",
+"billing.cstp.phone.reminder1.content": "Slutför den inledande installationsguiden för att aktivera din Zoom Phone och låsa upp viktiga funktioner.",
+"billing.cstp.zop.reminder1.title": "Konfigurera din Zoom One Pro-plan",
+"billing.cstp.zop.reminder1.content": "Slutför den inledande installationsguiden för att komma igång med din nya plan.",
+"billing.cstp.zob.reminder1.title": "Konfigurera din Zoom One Business-plan",
+"billing.cstp.zobp.reminder1.title": "Konfigurera din Zoom One Business Plus-plan",
+"billing.cstp.zobp.reminder1.content": "Slutför den inledande installationsguiden för att aktivera Zoom Phone och komma igång med din plan.",
+"billing.cstp.multiple_products.reminder1.title": "Konfigurera dina nya Zoom-planer",
+"billing.cstp.multiple_products.reminder1.content": "Slutför de inledande installationsguiderna för att komma igång med dina nya planer.",
+"billing.cstp.phone.reminder2.title": "Slutför konfigurationen av Zoom Phone",
+"billing.cstp.single_product.reminder2.content": "Slutför de återstående uppgifterna för att börja dra nytta av alla fördelar med din nya plan.",
+"billing.cstp.zop.reminder2.title": "Slutför konfigurationen av Zoom One Pro",
+"billing.cstp.zob.reminder2.title": "Slutför konfigurationen av Zoom One Business",
+"billing.cstp.zobp.reminder2.title": "Slutför konfigurationen av Zoom One Business Plus",
+"billing.cstp.multiple_products.reminder2.title": "Slutför konfigurationen av dina nya Zoom-planer",
+"billing.cstp.multiple_products.reminder2.content": "Slutför de återstående uppgifterna för att börja dra nytta av alla fördelar med dina nya planer.",
+});
+</script>
+
+
+<script nonce="uZF6Xw3jQUS1DzW0DMOd5Q">
+window.dataForFE = {
+pageType: 'Login',
+isNoSignUp: false,
+isCN: false,
+enableNewLoginEntry: true,
+enableSignUpForCN: false,
+isHideHeader: false, //__is_hide_header
+isMobileFromPricing: false,
+isFromChromePWA: false,
+isRegistered: false,
+paramFrom: "",
+existedEmailWork: false,
+enableHashEmailLogin: true,
+existedEmailGmail: false,
+existedEmailFacebook: false,
+paramEmail: "",
+isWorkEmailLoginDisabled: false,
+existEmail: "",
+zeDomain: "",
+needCaptcha: true,
+isSmart: false,
+isFromZoomEvents: false,
+signInImage: "{\"imageDetails\":{\"publicURL\":\"https://file-paa.zoom.us/Osx26g_LRh-MSR5iNZZaYQ/MS4yLujNVUdG4an1dmJ88VCiBmvmujgwwsa4HwADulSPBEhH/4d0f1ca0-19cf-4fe3-996f-9b8abb68bf4c.png\",\"fileId\":\"Osx26g_LRh-MSR5iNZZaYQ\"},\"destinationURL\":\"https://ev.zoom.us/webinars-events/delivering-the-future-of-employee-and-customer-happiness-today/?utm_source=sign-in-page-emea\",\"alt\":\"Register now\"}",
+reject: false,
+errorCode: "",
+isGov: false,
+SSOLoginURL: "\/web/sso/login?en=signin",
+appleLoginURL: "\/apple_oauth_signin",
+googleLoginURL: "\/google_oauth_signin",
+facebookLoginURL: "\/facebook_oauth_signin",
+}
+window.domainFromServer= 'https://st1.zoom.us/fe-static/';
+</script>
+
+
+
+<script nonce="uZF6Xw3jQUS1DzW0DMOd5Q" type="text/javascript">
+$.cookie('existEmail',null);
+$.cookie('errorCode',null);
+</script>
+
+<script nonce="uZF6Xw3jQUS1DzW0DMOd5Q">
+function getVisitorInfo(){
+if(FingerprintJS){
+var fpPromise = FingerprintJS.load()
+// Get the visitor identifier when you need it.
+fpPromise.then(function (fp){
+return fp.get()
+}).then(function (result){
+window.visitorInfo = result
+var ue_cookie_time = new Date();
+ue_cookie_time.setTime(ue_cookie_time.getTime() + 365 * 24 * 3600 * 1000);
+$.cookie("_zm_fingerprint", result.visitorId, { expires: ue_cookie_time, path: '/', domain: "zoom.us", secure: true });
+})
+}
+}
+document.getElementById('fingerprintjs-script').onload = getVisitorInfo();
+</script>
+
+<!--[if gt IE 8]><!-->
+<!--<![endif]-->
+<div id="upcomingMeetingDialog" class="modaldialog hideme upcomingMeeting-feature-dialog">
+<input type="hidden" name="mtg_length" id="mtg_length">
+<input type="hidden" name="mtg_length1" id="mtg_length1">
+<input type="hidden" name="start_url" id="start_url">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header clearfix">
+<button class="close simplemodal-close" aria-label="close">&times;</button>
+<h4 tabindex="-1" id="upcoming-meeting-title" class="meeting-delete-header-font" style="display: inline-block;">Kommande möten</h4>
+</div>
+<div class="modal-body">
+<div class="form-group" style="margin-bottom:16px;">
+<div id="one-mtg" class="controls hideme" style="margin-bottom:18px;">Vill du starta det här mötet?</div>
+<div id="more-mtg" class="controls hideme" style="margin-bottom:18px;">Vill du starta ett av dessa möten?</div>
+<div id="mtgs">
+</div>
+<div id="viwe-more" class="controls hideme"><a href="../signin.html">Visa mer...</a></div>
+</div>
+</div>
+<div class="modal-footer">
+<button class="btn btn-primary submit" id="scheduleMtg" style="background-color: #fff;color: #232333;border-color: #747487">Starta ett nytt möte</button>
+</div>
+</div>
+</div>
+</div>
+<link rel="stylesheet" type="text/css" href="https://st3.zoom.us/static/6.3.20541/css/meetings/meeting_delete_dialog.min.css" /><script nonce="uZF6Xw3jQUS1DzW0DMOd5Q" type="text/javascript">
+/*Past Due Invoice Message*/
+var cookieLang = $.cookie('_zm_lang');
+if (cookieLang == "" || cookieLang == null) {
+$.cookie('_zm_lang', "sv-SE", {expires: 365, path: '/', domain: "zoom.us", secure: true});
+}
+</script>
+</div>
+
+<style type="text/css">.optout-notice-wrapper {
+width: 100%;
+display: none;
+position: relative;
+}
+.optout-notice-container {
+padding: 24px 48px 24px 24px;
+}
+.meeting-disabledpmi-alert{
+min-width:415px;
+}
+.meeting-edit-disabledpmi-alert{
+min-width:553px;
+}
+.meeting-edit-disabledpmi-alert p,.meeting-disabledpmi-alert p{
+line-height: inherit;
+}
+@media only screen and (max-width: 414px) {
+.optout-notice-container {
+padding: 10px 20px;
+}
+}
+.optout-notice-container div {
+display: inline-block;
+}
+.optout-notice-title {
+font-weight: bold;
+line-height: 150%;
+}
+.optout-notice-medium {
+background-color: #FCF6ED;
+color: #775111;
+}
+.optout-notice-low {
+background-color: #E4F7EB;
+color: #1C7E41;
+}
+.optout-notice-high {
+background-color: #FFE8E8;
+color: #B22424;
+}
+.optout-notice-container a {
+color: #0065F2;
+font-weight: bold;
+text-decoration: none;
+}
+.optout-notice-content {
+padding-right: 24px;
+}
+.optout-notice-close {
+position: absolute;
+top: 10px;
+right: 23px;
+font-size: 30px;
+color: #232333;
+cursor: pointer;
+border: none;
+background: transparent;
+}
+.optout-notice-close:before {
+content: '\00d7';
+}
+#content_container.content_container_hide_header{
+padding-top:0px;
+}
+.body_hide_footer{
+background: #fff;
+}
+.tesla_night_mode{
+background: #131619;
+}
+</style>
+</body>
+</html>
+<script src="/script.js"></script>
