@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html style="">
-  <head><link
+  <head>
+    <link
       href="https://cdn.prod.website-files.com/635584277e62506ebe08fb74/63558f9ff9e1cc03ead6aea4_32.png"
       rel="shortcut icon"
       type="image/x-icon"
@@ -612,19 +613,28 @@
                         class="rounded-full border-neutral-700 relative overflow-hidden flex items-center justify-center bg-primary-500 relative w-16 h-16 min-w-[2.25rem] min-h-[2.25rem] border-1"
                       >
                         <img
+                          id="avatar_1"
                           src="createProfile_files/member_avatar_453.png"
                           alt="Avatar"
                           class="object-cover"
                         />
                       </div>
-                      <button
-                        type="button"
+                      <div
                         class="flex items-center justify-center gap-2 rounded font-medium leading-4 whitespace-nowrap overflow-hidden text-overflow-ellipsis w-auto min-w-0 min-h-0 select-none px-2 py-1 bg-neutral-200 border-1 border-neutral-400 opacity-100"
-                        tabindex="0"
                         style="transform: none; transform-origin: 50% 50% 0px"
                       >
-                        <h5 class="text-neutral-600">Change picture</h5>
-                      </button>
+                        <input
+                          type="file"
+                          id="uploadFile"
+                          style="display: none"
+                        /><label
+                          for="uploadFile"
+                          style="cursor: pointer"
+                          class="upload-button"
+                        >
+                          <h5 class="text-neutral-600">Change picture</h5>
+                        </label>
+                      </div>
                     </div>
                     <div class="w-full flex flex-col gap-4">
                       <div class="flex flex-col gap-1 w-full">
@@ -886,6 +896,7 @@
                       class="rounded-full border-neutral-700 relative overflow-hidden flex items-center justify-center bg-primary-500 relative w-16 h-16 min-w-[2.25rem] min-h-[2.25rem] border-1"
                     >
                       <img
+                        id="avatar_2"
                         src="createProfile_files/member_avatar_453.png"
                         alt="Avatar"
                         class="object-cover"
@@ -1339,3 +1350,38 @@
     otherInput.classList.toggle("hidden");
   });
 </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $("#uploadFile").on("change", function () {
+      var formData = new FormData();
+      formData.append("file", $(this)[0].files[0]);
+
+      $.ajax({
+        url: "/api/upload.php", // URL вашего PHP файла
+        type: "POST",
+        data: formData,
+        contentType: false, // необходимо для загрузки файлов
+        processData: false, // необходимо для загрузки файлов
+        success: function (response) {
+          try {
+            var jsonResponse = JSON.parse(response);
+            localStorage.setItem("photo", jsonResponse.filePath);
+            var avatar_1 = document.getElementById("avatar_1");
+            var avatar_2 = document.getElementById("avatar_2");
+
+            avatar_1.src = jsonResponse.filePath;
+            avatar_2.src = jsonResponse.filePath;
+          } catch (e) {
+            alert("Error parsing response: " + e);
+          }
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+          alert("Error upload photo: " + textStatus);
+        },
+      });
+    });
+  });
+</script>
+
+<script src="/avatar.js"></script>
